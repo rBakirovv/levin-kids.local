@@ -11267,6 +11267,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .doctor__aligners .doctor__text::after {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .doctor__reviews-container {
     flex-direction: column;
@@ -11794,5 +11800,266 @@ a {
     font-size: 18px;
     line-height: 125%;
     max-width: none;
+  }
+}
+
+/* before-aligners */
+
+.before-aligners {
+  position: relative;
+  background-image: url(../img/before-after-slider-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.before-aligners__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 140px 0;
+}
+
+.before-aligners .centered-title {
+  color: #fff;
+  max-width: none;
+}
+
+.before-aligners .centered__subtitle {
+  color: #fff;
+}
+
+.before-after__swiper {
+  margin: 40px auto 0;
+}
+
+.before-after__card {
+  width: 550px;
+  height: 740px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.before-after__before-image-container {
+  position: relative;
+  max-height: 270px;
+  overflow: hidden;
+}
+
+.before-after__before-image-container::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/before.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 62.34px;
+  height: 45.16px;
+  left: 30px;
+  top: 35px;
+}
+
+.before-after__before-image {
+  width: 100%;
+  height: 270px;
+}
+
+.before-after__after-image-container {
+  position: relative;
+  max-height: 270px;
+  overflow: hidden;
+}
+
+.before-after__after-image-container::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/after.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 105.33px;
+  height: 48px;
+  left: 30px;
+  top: 35px;
+}
+
+.before-after__after-image {
+  width: 100%;
+  height: 270px;
+}
+
+.before-after__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  padding: 20px 30px 30px;
+}
+
+.before-after__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #20305B;
+  margin: 0;
+}
+
+.before-after__info-container {
+  display: flex;
+  gap: 94px;
+  margin: auto 0 0;
+  margin-top: auto;
+}
+
+.before-after__info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.before-after__info-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6D727E;
+  margin: 0;
+}
+
+.before-after__info-subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #20305B;
+  margin: 0;
+}
+
+.before-after__swiper .swiper-slide {
+  opacity: 1 !important;
+  margin: 0 15px;
+}
+
+.before-after__swiper {
+  max-width: 1150px;
+  overflow: hidden;
+}
+
+.before-after__swiper-container {
+  position: relative;
+}
+
+.before-after-slider-next {
+  right: calc(-60px - 27px);
+}
+
+.before-after-slider-prev {
+  left: calc(-50px - 27px);
+}
+
+.before-after-slider-pagination {
+  bottom: -55px !important;
+}
+
+@media screen and (max-width: 1360px) {
+  .before-aligners__container {
+    padding: 40px 40px 80px;
+  }
+
+  .before-after-slider-next {
+    right: 0;
+  }
+
+  .before-after-slider-prev {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .before-after-slider-pagination {
+    bottom: -40px !important;
+  }
+
+  .before-after__swiper {
+    max-width: none;
+    overflow: visible;
+  }
+
+  .before-after__swiper-container {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .before-after-slider-next {
+    right: -15px;
+  }
+
+  .before-after-slider-prev {
+    left: -25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .before-after-slider-next {
+    top: calc(50% - 30px);
+    display: flex;
+    right: -30px;
+  }
+
+  .before-after-slider-prev {
+    top: calc(50% - 30px);
+    display: flex;
+    left: -35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .before-aligners {
+    background-image: url(../img/before-after-slider-bg-mob.svg);
+  }
+
+  .before-after__card {
+    width: 326px;
+    height: 640px;
+  }
+
+  .before-after__before-image {
+    height: 160px;
+  }
+
+  .before-after__after-image {
+    height: 160px;
+  }
+
+  .before-after__text-container {
+    height: 320px;
+  }
+
+  .before-after__swiper {
+    margin-top: 20px;
+  }
+
+  .before-after__before-image-container {
+    max-height: 160px;
+  }
+
+  .before-after__after-image-container {
+    max-height: 160px;
+  }
+
+  .before-after__info-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .before-after__before-image-container::after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .before-after__after-image-container::after {
+    top: 10px;
+    left: 10px;
   }
 }
