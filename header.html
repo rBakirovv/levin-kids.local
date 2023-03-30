@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Левин Кидс</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script type="text/javascript" charset="utf-8" defer src="./js/modalCallback.js"></script>
+</head>
+
+<body>
+
+  <div class="module-wrap">
+    <div class="module" id="module">
+      <div class="loader">
+        <div class="preloader">
+          <div class="preloader__container">
+            <span class="preloader__round"></span>
+          </div>
+        </div>
+      </div>
+      <button class="module__close">&#9587;</button>
+      <div class="module__warning">
+        Нажимая на кнопку, вы даете согласие на обработку персональных
+        данных и соглашаетесь c
+        <a class="module-warning__link" href="#">Политикой конфиденциальности</a>
+      </div>
+      <div class="module__container">
+        <div class="module__title">
+          Записаться <br class="module-space-desktop" />
+          на приём
+        </div>
+        <form action="" class="module__form">
+          <div class="module-form__input-container">
+            <input type="text" placeholder="Ваше имя" class="module-form__name module-form__input" required />
+          </div>
+          <div class="module-form__input-container">
+            <label class="module-form__label">
+              <span class="module-form-label__title">Контактный телефон</span>
+              <input type="tel" placeholder="+7 (ххх) ххх-хх-хх" class="module-form__tel input module-form__input"
+                required id="phone" name="phone" />
+              <span class="module-form-label__title-error">Неверный формат номера телефона</span>
+            </label>
+          </div>
+          <div class="module-form__feedback">
+            <button type="submit" class="btn-record module-form__record">
+              <svg width="347" height="72" viewBox="0 0 347 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="module-form__record-path"
+                  d="M0 15.744C0 7.39789 6.81255 0.656821 15.1582 0.744853L325.117 4.01436C332.41 4.09129 338.591 9.40365 339.763 16.6028L345.892 54.243C347.388 63.4304 340.242 71.748 330.934 71.6529L14.8468 68.4241C6.62272 68.3401 0 61.6494 0 53.4249V15.744Z"
+                  fill="#FF276C" />
+                <text class="module-form__record-text" fill="#fff" text-anchor="middle" x="174" y="43">Записаться на
+                  приём</text>
+              </svg>
+              <span class="module-form__record-span">Записаться на приём</span>
+            </button>
+            <div class="module__tel tel">
+              <a href="tel:+74957755821" class="module-form-tel__number tel__number">+7 495 775-58-21</a>
+              <span class="module-form-tel__text tel__text">ИЛИ ПРОСТО ПОЗВОНИТЕ</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="module__submit-container">
+        <h3 class="module__submit-title">
+          Заявка
+          принята
+        </h3>
+        <p class="module__submit-subtitle">
+          Вашая заявка отправлена и находится
+          на рассмотрении. Наш специалист изучит
+          её и перезвонит в ближайшее время
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="burger-menu-wrap">
+    <div class="burger-menu" id="burger-menu">
+      <div class="burger-menu__header">
+        <div class="header__container container">
+          <div class="burger-menu-header__logo logo"></div>
+          <div class="burger-menu-header__tel tel">
+            <a href="tel:+74957755821" class="tel__number">+7 495 775-58-21</a>
+            <span class="tel__text">Задайте интересующий вопрос</span>
+          </div>
+          <div class="burger-menu-header__close logo"></div>
+        </div>
+      </div>
+      <div class="burger-menu__content">
+        <div class="burger-menu__container container">
+          <div class="burger-menu__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_active">
+                <a href="#aboutus" class="nav__link">Почему мы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#health" class="nav__link">Забота о здоровье</a>
+              </li>
+              <li class="nav__item">
+                <a href="#serves" class="nav__link">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="#doctors" class="nav__link">Врачи</a>
+              </li>
+              <li class="nav__item">
+                <a href="#price" class="nav__link">Стоимость</a>
+              </li>
+              <li class="nav__item">
+                <a href="#reviews" class="nav__link">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="burger-menu__address address">
+              <div class="address__img"></div>
+              <div class="address__desc">
+                <span class="address__title">Мы находимся по адресу</span>
+                <span class="address__title-mobile">Адрес клиники</span>
+                <span class="address__name">Университет</span>
+                <span class="address__street">Проспект Вернадского, 8а</span>
+              </div>
+            </div>
+            <div class="burger-menu__lable">5 минут от метро</div>
+            <div class="burger-menu__clinic-address">
+              <span class="clinic-address__title">Адрес клиники</span>
+              <span class="clinic-address__street">г. Москва, ул. <br />
+                Льва Толстого, стр.5</span>
+            </div>
+          </div>
+          <div class="burger-menu__data data">
+            <a href="" class="burger-menu-data__sheme data__sheme">Схема проезда</a>
+            <a href="" class="burger-menu-data__coordin data__coordin">Координаты 55.732120.37.588526</a>
+          </div>
+          <div class="burger-menu__time-work time-work">
+            <div class="time-work__block">
+              <span class="time-work__days">Понедельник - Пятница</span>
+              <span class="time-work__clocks">с 10:00 до 20:00</span>
+            </div>
+            <div class="time-work__block">
+              <span class="time-work__days">Суббота - Воскресенье</span>
+              <span class="time-work__clocks">с 10:00 до 19:00</span>
+            </div>
+          </div>
+          <div class="burger-menu-content__tel tel">
+            <a href="tel:+74957755821" class="tel__number">+7 495 775-58-21</a>
+            <span class="tel__text">Задайте интересующий вопрос</span>
+          </div>
+          <a href="javascript:openModule();" class="btn-record burger-menu__record">Записаться на приём</a>
+          <div class="burger-menu__social">
+            <div class="social__list">
+              <li class="social__item">
+                <a href="" class="social__link"></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link"></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link"></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link"></a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header header-with-menu">
+    <div class="header-fix-wrapp header-fix-wrap-menu">
+      <div class="header__container container container_header">
+        <a href="./index.html" class="header__logo logo"></a>
+        <div class="header__address address">
+          <div class="address__img"></div>
+          <div class="address__desc address__desc_header">
+            <span class="address__name">Университет</span>
+            <span class="address__street">Проспект Вернадского, 8а</span>
+          </div>
+        </div>
+        <div class="header__tel tel">
+          <a href="tel:+74957755821" class="tel__number">+7 495 775-58-21</a>
+          <span class="tel__text">Задайте интересующий вопрос</span>
+        </div>
+        <a href="javascript:openModule();" class="btn-record header__record">
+          <svg width="251" height="61" viewBox="0 0 251 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header__record-path"
+              d="M0 15.6848C0 7.32871 6.8282 0.583609 15.1837 0.685919L232.123 3.34227C239.532 3.43299 245.765 8.91981 246.794 16.2575L250.575 43.2104C251.851 52.3059 244.726 60.4019 235.542 60.293L14.8222 57.6758C6.60783 57.5784 0 50.8917 0 42.6768V15.6848Z"
+              fill="#FF276C" />
+            <text class="header__record-text" fill="#fff" text-anchor="middle" x="125" y="36">Записаться на приём</text>
+          </svg>
+        </a>
+        <button class="header__burger burger"></button>
+      </div>
+    </div>
+    <div class="header-menu-wrapper container">
+      <div class="header-menu__button header-menu__button-service">
+        <div class="header-menu__button-service-icon"></div>
+        Услуги клиники
+      </div>
+      <div class="header-menu__button header-menu__button-dropdown">
+        О клинике
+        <svg class="header-menu__arrow-svg" width="14" height="6" viewBox="0 0 14 6" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="header-menu__arrow-path"
+            d="M1.5177 1.00439L5.00234 4.15401C6.13161 5.17471 7.84405 5.1908 8.98782 4.19144L12.5172 1.10771"
+            stroke="#FF276C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <ul class="navigation-item__dropdown">
+          <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+              class="inherit-link">Все цены</a></li>
+          <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+              class="inherit-link">Онлайн оплата</a></li>
+          <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+              class="inherit-link">Лечение в рассрочку</a></li>
+          <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+              class="inherit-link">Программа лояльности</a></li>
+        </ul>
+      </div>
+      <a href="/" class="inherit-link header-menu__button">Детские врачи</a>
+      <a href="/" class="inherit-link header-menu__button">Цены</a>
+      <a href="/" class="inherit-link header-menu__button">Контакты</a>
+    </div>
+    <div class="header__nav-scroll nav">
+      <div class="header__container container header__nav-list-container container_header">
+        <ul class="nav__list">
+          <li class="nav__item nav__item_hedaer">
+            <a href="#how-going-sed" class="nav__link">Общий наркоз</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-video" class="nav__link">Видео об услуге</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#who-suits" class="nav__link">Для кого</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-advantages" class="nav__link">Преимущества</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-stages" class="nav__link">Этапы лечения</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-video" class="nav__link">Видео об услуге</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#who-suits" class="nav__link">Для кого</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section id="start-screen" class="section start-screen">banner</section>
+    <section class="section" id="how-going-sed">how-going-sed</section>
+    <section class="section" id="sedation-video">sedation-video</section>
+  </main>
+  <style>
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1000px;
+      background-color: palevioletred;
+      border-bottom: 2px solid #fff;
+    }
+
+    .start-screen {
+      background: paleturquoise;
+    }
+  </style>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c9ed032f-0f47-41ae-8390-9122eafcd244&lang=ru_RU"
+    type="text/javascript"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Видео в окне -->
+  <script src="./js/videotube.js"></script>
+  <!-- Бургер -->
+  <script src="./js/burger.js"></script>
+  <!-- Навигация -->
+  <script src="./js/header-nav.js"></script>
+  <!-- Слайдер с видео -->
+  <script src="./js/slider-review.js"></script>
+  <!-- Слайдер с врачами -->
+  <script src="./js/slider-doctor.js"></script>
+  <!-- Слайдер галерея -->
+  <script src="./js/slider-gallery.js"></script>
+  <!-- Аккордеон -->
+  <script src="./js/accordion.js"></script>
+  <!-- Слайдер до после -->
+  <script src="./js/slider-before-after.js"></script>
+  <!-- Слайдер брекеты -->
+  <script src="./js/slider-braces.js"></script>
+</body>
+
+</html>

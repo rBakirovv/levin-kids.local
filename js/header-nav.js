@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     main.querySelectorAll("section").forEach((el, index) => {
-      if (el.offsetTop - document.querySelector(".header__nav").clientHeight - document.querySelector(".header").clientHeight <= scrollDistance) {
+      if (el.offsetTop - document.querySelector(".header-menu-wrapper").clientHeight - document.querySelector(".header").clientHeight <= scrollDistance) {
         navList.querySelectorAll(".nav__link").forEach((el) => {
           if (el.classList.contains("nav__link_active")) {
             el.classList.remove("nav__link_active")
