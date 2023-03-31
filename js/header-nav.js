@@ -1,14 +1,18 @@
 window.addEventListener("DOMContentLoaded", function () {
   const main = document.querySelector(".main");
   const navList = document.querySelector(".header__nav-list-container");
+  const headerMenuWrapper = document.querySelector(".header-menu-wrapper");
 
   window.addEventListener("scroll", () => {
     let scrollDistance = window.scrollY;
 
     if (scrollDistance >= document.querySelector(".start-screen").clientHeight) {
       navList.classList.add("header__nav-list-container_active");
+      headerMenuWrapper.classList.add("display-none");
+
     } else {
       navList.classList.remove("header__nav-list-container_active");
+      headerMenuWrapper.classList.remove("display-none");
     }
 
     main.querySelectorAll("section").forEach((el, index) => {
