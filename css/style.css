@@ -100,8 +100,14 @@ a {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 998;
   background-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    z-index: 989;
+  }
 }
 
 .header-with-menu {
@@ -12571,7 +12577,7 @@ a {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  z-index: 2;
+  z-index: 998;
   box-sizing: border-box;
   background-color: #fff;
   top: 195px;
@@ -12871,7 +12877,7 @@ a {
   width: 50px;
   height: 4px;
   border-radius: 12px;
-  background-color: #9F9F9F;
+  background-color: #FFF;
 }
 
 .swipe-menu__banners-container {
@@ -13060,4 +13066,23 @@ a {
   .swipe-menu {
     display: block;
   }
+}
+
+/* menu-background */
+
+.menu-background {
+  pointer-events: none;
+  background: rgba(0, 0, 0, .7);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 990;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.menu-background_active {
+  opacity: 1;
 }
