@@ -61,7 +61,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
   swipeMenuContainer.addEventListener("scroll", () => {
     containerPos = swipeMenuContainer.scrollTop;
-    console.log(containerPos)
   })
 
   swipeMenu.addEventListener('touchend', function (event) {
