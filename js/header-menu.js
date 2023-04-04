@@ -46,6 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
   let touchstartY = 0;
   let touchendY = 0;
   let movedY = 0;
+  let containerPos = 0;
 
   swipeMenu.addEventListener('touchstart', function (event) {
     touchstartY = event.changedTouches[0].screenY;
@@ -53,15 +54,20 @@ window.addEventListener("DOMContentLoaded", function () {
 
   swipeMenu.addEventListener('touchmove', function (event) {
     movedY = event.changedTouches[0].screenY;
-    if ((movedY - touchstartY > 0)) {
+    if ((movedY - touchstartY > 0) && (containerPos === 0)) {
       swipeMenu.style.transform = `translateY(${movedY - touchstartY}px)`;
     }
+  })
+
+  swipeMenuContainer.addEventListener("scroll", () => {
+    containerPos = swipeMenuContainer.scrollTop;
+    console.log(containerPos)
   })
 
   swipeMenu.addEventListener('touchend', function (event) {
     touchendY = event.changedTouches[0].screenY;
 
-    if ((movedY - touchstartY > 30) && (swipeMenuContainer.scrollTop <= 0 || !event.target.closest(".swipe-menu__container"))) {
+    if ((movedY - touchstartY > 30) && (containerPos === 0)) {
       mobileMenuClose();
     } else {
       swipeMenu.style.transform = `translateY(0)`;
