@@ -112,7 +112,6 @@ a {
 
 .header-with-menu {
   position: sticky;
-  overflow: hidden;
   background-color: #fff;
 }
 
@@ -12433,6 +12432,7 @@ a {
 .header-menu-wrapper {
   position: relative;
   display: flex;
+  max-width: 100%;
   justify-content: space-between;
   gap: 15px;
   box-sizing: border-box;
