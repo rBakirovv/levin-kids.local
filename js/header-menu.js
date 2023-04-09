@@ -8,7 +8,6 @@ window.addEventListener("DOMContentLoaded", function () {
   const swipeMenuContainer = swipeMenu.querySelector(".swipe-menu__container");
   const menuBackground = document.querySelector(".menu-background");
   const mobileMenu = document.querySelector(".mobile-menu");
-  //const swipeMenuItem = document.querySelector(".swipe-menu__scroll-item");
 
   function handleMobileMenu() {
     mobileMenuButtonService.classList.toggle("mobile-menu__button-service_active");
@@ -79,6 +78,29 @@ window.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", () => {
     if (!mobileMenu.classList.contains("mobile-menu_opened")) {
       mobileMenu.classList.add("mobile-menu_opened");
+    }
+  })
+
+  menuBackground.addEventListener("click", () => {
+    // close основное меню 
+    if (document.querySelector(".header-menu_open")) {
+      headerWithMenu.classList.remove("header-menu_opened");
+      headerMenu.classList.remove("header-menu_open");
+      menuBackground.classList.remove("menu-background_active");
+    }
+
+    // close мобильного меню
+    if (document.querySelector(".swipe-menu_active")) {
+      mobileMenuButtonService.classList.remove("mobile-menu__button-service_active");
+      swipeMenu.classList.remove("swipe-menu_active");
+      menuBackground.classList.remove("menu-background_active");
+      swipeMenu.style.transform = `translateY(150%)`;
+    }
+
+    if (html.style.overflow === "hidden") {
+      html.style.overflow = "visible";
+    } else {
+      html.style.overflow = "hidden";
     }
   })
 })

@@ -4279,6 +4279,7 @@ a {
 
 @media screen and (max-width: 1000px) {
   .header {
+    height: 70px;
     padding-top: 0;
   }
 
@@ -13114,5 +13115,6 @@ a {
 }
 
 .menu-background_active {
+  pointer-events: all;
   opacity: 1;
 }
