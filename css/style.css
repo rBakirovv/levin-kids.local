@@ -7286,6 +7286,10 @@ a {
   background-position: bottom center;
 }
 
+.start-screen-sedation .screen__content {
+  padding-bottom: 100px;
+}
+
 .start-screen-sedation .start__title {
   font-weight: 300;
   max-width: 690px;
@@ -7437,6 +7441,7 @@ a {
   .start-screen-sedation .screen__content {
     padding-top: 505px;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .start-screen-sedation .start__title {
@@ -10376,6 +10381,7 @@ a {
 
 .start-screen-service .screen__content {
   padding-top: 55px;
+  padding-bottom: 100px;
   gap: 15px;
 }
 
@@ -10416,6 +10422,7 @@ a {
 
   .start-screen-service .screen__content {
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .start-screen-service::before {
@@ -12521,6 +12528,10 @@ a {
 
 .header-menu__button-service:hover .header-menu__button-service-icon {
   background-image: url(../img/header-menu-service-hover.svg);
+}
+
+.header-menu_opened .header-menu__button-service:hover .header-menu__button-service-icon {
+  background-image: url(../img/header-menu-service-close.svg);
 }
 
 .inherit-link {
