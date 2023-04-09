@@ -61,7 +61,6 @@ html,
 body {
   font-family: "TT";
   font-weight: 400;
-  min-width: 100vw;
   min-height: 100%;
   background-color: #fff;
   scroll-behavior: smooth;
@@ -101,7 +100,7 @@ a {
   left: 0;
   top: 0;
   z-index: 998;
-  background-color: #fff;
+  height: 206px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -112,7 +111,7 @@ a {
 
 .header-with-menu {
   position: sticky;
-  background-color: #fff;
+  pointer-events: none;
 }
 
 .header__nav {
@@ -137,12 +136,13 @@ a {
 }
 
 .header-fix-wrap-menu {
+  pointer-events: all;
   position: relative;
   height: 110px;
 }
 
 .header__nav-scroll {
-
+  pointer-events: all;
   z-index: 9999;
   top: 110px;
   left: 0;
@@ -152,6 +152,7 @@ a {
 
 .header__nav-list-container {
   display: none;
+  /*height: 96px;*/
   padding: 0;
 }
 
@@ -185,6 +186,10 @@ a {
 .header__nav-list-container_active {
   display: flex;
 }
+
+.header__nav-list-container .nav__link {
+  /*height: 96px;*/
+} 
 
 .header__list-container_disable {
   display: none;
@@ -2085,8 +2090,8 @@ a {
 }
 
 .kid__serv {
-  width: 290px;
-  height: 81px;
+  /*width: 290px;
+  height: 81px;*/
   margin-top: 13px;
 }
 
@@ -9614,6 +9619,10 @@ a {
   color: #914BF1 !important;
 }
 
+.doctor__subtitle_orange {
+  color: #DD763B !important;
+}
+
 .doctor-slider .doctor__img {
   position: relative;
   display: flex;
@@ -10562,7 +10571,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   background: #FFFFFF;
-  gap: 45px;
+  gap: 25px;
   border-radius: 15px;
   width: 432px;
   min-height: 216px;
@@ -10580,7 +10589,7 @@ a {
   font-size: 24px;
   line-height: 140%;
   color: #20305B;
-  max-width: 185px;
+  max-width: 190px;
   margin: 0;
 }
 
@@ -11138,11 +11147,13 @@ a {
   margin-top: -20px;
 }
 
-.start-screen-aligners .start-screen-service__price {
+/*.start-screen-aligners .start-screen-service__price {*/
+.start-screen-service__price {
   display: block;
 }
 
-.start-screen-aligners .start-screen-service__price .normal-span {
+/*.start-screen-aligners .start-screen-service__price .normal-span {*/
+.start-screen-service__price .normal-span {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -11858,8 +11869,8 @@ a {
 }
 
 .before-after__card {
-  width: 550px;
-  height: 740px;
+  width: 485px;
+  /*height: 740px;*/
   overflow: hidden;
   background-color: #fff;
   border-radius: 15px;
@@ -11917,7 +11928,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 200px;
+  min-height: 160px;
   padding: 20px 30px 30px;
 }
 
@@ -11952,7 +11963,7 @@ a {
 
 .before-after__info-subtitle {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
   color: #20305B;
   margin: 0;
@@ -11964,7 +11975,7 @@ a {
 }
 
 .before-after__swiper {
-  max-width: 1150px;
+  max-width: 1016px;
   overflow: hidden;
 }
 
@@ -12432,13 +12443,19 @@ a {
 .header-menu-wrapper {
   position: relative;
   display: flex;
-  max-width: 100%;
   justify-content: space-between;
   gap: 15px;
   box-sizing: border-box;
   height: 96px;
   margin: 0 auto 0;
   padding: 20px 0;
+  background-color: #fff;
+  pointer-events: all;
+}
+
+.header-menu-container {
+  width: 100%;
+  background-color: #fff;
 }
 
 .header-menu__button {
@@ -12473,10 +12490,6 @@ a {
   color: #FF276C;
 }
 
-.header-menu__button-service:hover {
-  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 63.35%, #FFD9F7 100%);
-}
-
 .header-menu__button-service-icon {
   background-image: url(../img/header-menu-service.svg);
   background-size: contain;
@@ -12484,6 +12497,7 @@ a {
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
+  transform: translateY(-0.7px);
 }
 
 .header-menu_opened .header-menu__button-service {
@@ -12493,6 +12507,15 @@ a {
 
 .header-menu_opened .header-menu__button-service .header-menu__button-service-icon {
   background-image: url(../img/header-menu-service-close.svg);
+}
+
+.header-menu__button-service:hover {
+  background: #FF276C;
+  color: #FFFFFF;
+}
+
+.header-menu__button-service:hover .header-menu__button-service-icon {
+  background-image: url(../img/header-menu-service-hover.svg);
 }
 
 .inherit-link {
@@ -12573,7 +12596,7 @@ a {
 
 .header-menu {
   width: 1360px;
-  height: 630px;
+  height: 600px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -12620,7 +12643,7 @@ a {
 
 .header-menu .banner__lable {
   right: -10px;
-  bottom: 30px;
+  bottom: 10px;
 }
 
 .header-menu__navigation {
@@ -12644,15 +12667,15 @@ a {
 
 .header-menu-link-title {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 20px;
+  line-height: 28px;
   color: #20305B;
 }
 
 .header-menu-link {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 20px;
+  line-height: 28px;
   color: #20305B;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -12726,6 +12749,12 @@ a {
   box-sizing: border-box;
   filter: drop-shadow(0px -12px 30px rgba(102, 102, 102, 0.1));
   padding: 12px 17.5px 23px;
+  transform: translateY(150%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.mobile-menu_opened {
+  transform: translateY(0);
 }
 
 .mobile-menu__item {
@@ -12843,8 +12872,9 @@ a {
   width: 100%;
   height: 72.5%;
   background: #fff;
-  transform: translateY(100%);
+  transform: translateY(150%);
   transition: all 0.3s ease;
+  padding-top: 20px;
 }
 
 .swipe-menu_active {
@@ -12859,7 +12889,7 @@ a {
   width: 100%;
   height: 100%;
   overflow: scroll;
-  padding: 20px 17px 120px;
+  padding: 0 17px 120px;
 }
 
 .swipe-menu__scroll-item {
@@ -12892,7 +12922,7 @@ a {
   position: relative;
   background-image: url(../img/swipe-menu-long-banner.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   box-sizing: border-box;

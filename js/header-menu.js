@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const swipeMenu = document.querySelector(".swipe-menu");
   const swipeMenuContainer = swipeMenu.querySelector(".swipe-menu__container");
   const menuBackground = document.querySelector(".menu-background");
+  const mobileMenu = document.querySelector(".mobile-menu");
   //const swipeMenuItem = document.querySelector(".swipe-menu__scroll-item");
 
   function handleMobileMenu() {
@@ -16,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     if (html.style.overflow === "hidden") {
       html.style.overflow = "visible";
-      swipeMenu.style.transform = `translateY(100%)`;
+      swipeMenu.style.transform = `translateY(150%)`;
     } else {
       html.style.overflow = "hidden";
       swipeMenu.style.transform = `translateY(0)`;
@@ -28,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
     mobileMenuButtonService.classList.remove("mobile-menu__button-service_active");
     swipeMenu.classList.remove("swipe-menu_active");
     menuBackground.classList.remove("menu-background_active");
-    swipeMenu.style.transform = `translateY(100%)`;
+    swipeMenu.style.transform = `translateY(150%)`;
   }
 
   headerButtonService.addEventListener("click", () => {
@@ -54,7 +55,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   swipeMenu.addEventListener('touchmove', function (event) {
     movedY = event.changedTouches[0].screenY;
-    if ((movedY - touchstartY > 0) && (containerPos <= 0)) {
+    if ((movedY - touchstartY > 0) && (!event.target.closest(".swipe-menu__container"))) {
       swipeMenu.style.transform = `translateY(${movedY - touchstartY}px)`;
     }
   })
@@ -66,12 +67,18 @@ window.addEventListener("DOMContentLoaded", function () {
   swipeMenu.addEventListener('touchend', function (event) {
     touchendY = event.changedTouches[0].screenY;
 
-    if ((movedY - touchstartY > 30) && (containerPos <= 0)) {
+    if ((movedY - touchstartY > 30) && (!event.target.closest(".swipe-menu__container"))) {
       mobileMenuClose();
     } else {
       swipeMenu.style.transform = `translateY(0)`;
     }
   }, false)
 
-  mobileMenuButtonService.addEventListener("click", handleMobileMenu)
+  mobileMenuButtonService.addEventListener("click", handleMobileMenu);
+
+  window.addEventListener("scroll", () => {
+    if (!mobileMenu.classList.contains("mobile-menu_opened")) {
+      mobileMenu.classList.add("mobile-menu_opened");
+    }
+  })
 })

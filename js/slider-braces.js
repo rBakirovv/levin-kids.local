@@ -1,8 +1,8 @@
 window.addEventListener("DOMContentLoaded", function () {
   const swiperBraces = new Swiper('.braces-types__swiper', {
+    slideToClickedSlide: false,
     loop: true,
     centeredSlides: true,
-    slideToClickedSlide: true,
     slidesPerView: "auto",
     navigation: {
       nextEl: ".braces-slider-next",
@@ -15,9 +15,9 @@ window.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       1000: {
+        slideToClickedSlide: false,
         loop: true,
         centeredSlides: false,
-        slideToClickedSlide: true,
         slidesPerView: "auto",
       },
     },

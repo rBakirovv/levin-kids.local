@@ -1,4 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
+
+if (document.getElementById('doctor')) {
+
   const swiperDoctor = new Swiper('.doctor__container', {
     autoHeight: true, //enable auto height
     loop: true,
@@ -37,4 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   swiperDoctor.controller.control = swiperDoctorSmall;
   swiperDoctorSmall.controller.control = swiperDoctor;
+
+}
+
 })
