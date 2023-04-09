@@ -2856,6 +2856,10 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+  .map {
+    pointer-events: none;
+  }
+
   .card__line::after {
     display: none;
   }
@@ -12930,7 +12934,6 @@ a {
   border-radius: 15px;
   width: 100%;
   padding: 23px 15px 15px;
-  cursor: pointer;
 }
 
 .swipe-menu__banner_small {
