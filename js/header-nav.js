@@ -25,7 +25,8 @@ window.addEventListener("DOMContentLoaded", function () {
         })
 
         navList.querySelectorAll(".nav__link").forEach((linkEl) => {
-          if (linkEl.getAttribute("href").includes(el.id) && !linkEl.classList.contains("nav__link_active")) {
+          if (linkEl.getAttribute("href") === (`#${el.id}`) && !linkEl.classList.contains("nav__link_active")) {
+            console.log(el.id)
             navList.querySelector(`[href="${linkEl.getAttribute("href")}"]`).classList.add("nav__link_active");
             /*
             navList.querySelector(".nav__link_active").scrollIntoViewIfNeeded({
