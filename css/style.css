@@ -11889,6 +11889,9 @@ a {
 }
 
 .before-after__before-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   max-height: 270px;
   overflow: hidden;
@@ -11908,11 +11911,14 @@ a {
 }
 
 .before-after__before-image {
-  width: 100%;
+  max-width: 70%;
   height: 270px;
 }
 
 .before-after__after-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   max-height: 270px;
   overflow: hidden;
@@ -11932,7 +11938,7 @@ a {
 }
 
 .before-after__after-image {
-  width: 100%;
+  max-width: 70%;
   height: 270px;
 }
 
