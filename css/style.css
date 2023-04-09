@@ -11281,14 +11281,14 @@ a {
   background: linear-gradient(180deg, rgba(255, 248, 244, 0) 0%, #FFF8F4 100%);
 }
 
-.doctor__aligners .doctor__img img {
-  width: 100%;
-}
-
 .doctor__aligners .doctor__img {
   position: relative;
   display: flex;
   align-items: flex-end;
+}
+
+.doctor__aligners .doctor__content {
+  max-width: 1360px;
 }
 
 @media screen and (max-width: 1440px) {
