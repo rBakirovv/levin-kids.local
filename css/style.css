@@ -12610,25 +12610,46 @@ a {
 }
 
 .header-menu__button-service {
+  position: relative;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 63.35%, #FFD9F7 100%);
+  transition: all .5s ease-in-out;
   color: #FF276C;
 }
 
-.header-menu__button-service-icon {
-  background-image: url(../img/header-menu-service.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-width: 15px;
-  min-height: 15px;
-  max-width: 15px;
-  max-height: 15px;
-  transform: translateY(-0.7px);
+.header-menu__button-service::after {
+  content: '';
+  position: absolute;
+  background: #FF276C;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s;
+  border-radius: 12px;
+}
+
+.header-menu__button-service:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-menu__button-service-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all .5s;
 }
 
 .header-menu_opened .header-menu__button-service {
@@ -12636,21 +12657,29 @@ a {
   color: #FFFFFF;
 }
 
-.header-menu_opened .header-menu__button-service .header-menu__button-service-icon {
-  background-image: url(../img/header-menu-service-close.svg);
-}
-
-.header-menu__button-service:hover {
-  background: #FF276C;
+.header-menu__button-service:hover .header-menu__button-service-container {
   color: #FFFFFF;
 }
 
-.header-menu__button-service:hover .header-menu__button-service-icon {
-  background-image: url(../img/header-menu-service-hover.svg);
+.header-menu__button-service-icon path {
+  transition: all .5s;
 }
 
-.header-menu_opened .header-menu__button-service:hover .header-menu__button-service-icon {
-  background-image: url(../img/header-menu-service-close.svg);
+.header-menu__button-service:hover .header-menu__button-service-icon path {
+  fill: white;
+  stroke: white;
+}
+
+.header-menu_opened .header-menu__button-service-icon {
+  display: none;
+}
+
+.header-menu__button-service-icon-close {
+  display: none;
+}
+
+.header-menu_opened .header-menu__button-service-icon-close {
+  display: block;
 }
 
 .inherit-link {
