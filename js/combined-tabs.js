@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  tabsItems && tabsItems.forEach((item) => {
+  tabsItems && tabsItems.forEach((item, index) => {
     if (item.querySelector(".combined-tabs__head")) {
       const tabItem = tabsContainer.querySelector(`[data-tab="#${item.id}"]`);
 
@@ -37,6 +37,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
         tabItem.classList.add("tabs__item-active");
         item.classList.add("serves__options-active");
+
+        const elementPosition = item.querySelector(".combined-tabs__head").getBoundingClientRect().top;
+        const offsetPosition = elementPosition;
+
+        window.scrollBy({
+          top: index === 0 ? offsetPosition - 85 : offsetPosition - tabsItems[0].clientHeight - 25,
+          behavior: "smooth"
+        });
       })
     }
   })
