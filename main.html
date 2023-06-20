@@ -30,11 +30,6 @@
         </div>
       </div>
       <button class="module__close">&#9587;</button>
-      <div class="module__warning">
-        Нажимая на кнопку, вы даете согласие на обработку персональных
-        данных и соглашаетесь c
-        <a class="module-warning__link" href="#">Политикой конфиденциальности</a>
-      </div>
       <div class="module__container">
         <div class="module__title">
           Записаться <br class="module-space-desktop" />
@@ -80,6 +75,11 @@
           на рассмотрении. Наш специалист изучит
           её и перезвонит в ближайшее время
         </p>
+      </div>
+      <div class="module__warning">
+        Нажимая на кнопку, вы даете согласие на обработку персональных
+        данных и соглашаетесь c
+        <a class="module-warning__link" href="#">Политикой конфиденциальности</a>
       </div>
     </div>
   </div>
@@ -307,13 +307,13 @@
           <li class="start__item">Находим подход <br class="start__item-br"><span class="start__item-span">к любому
               ребенку</span></li>
         </ul>
-        <a href="javascript:openModule();" class="btn-record sedation-record">
+        <a href="javascript:openModule();" class="btn-record sedation-record"
+          onclick="ym(91530900,'reachGoal','btn-click'); return true;">
           <svg width="313" height="59" viewBox="0 0 313 59" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="sedation-record__path"
               d="M2.07726 14.4612C2.65965 6.59969 9.22786 0.530389 17.1108 0.569555L292.477 1.93771C299.734 1.97377 305.925 7.20036 307.177 14.3489L311.889 41.2409C313.507 50.4776 306.348 58.9179 296.971 58.8288L14.9986 56.1519C6.33461 56.0696 -0.458101 48.6851 0.182017 40.0444L2.07726 14.4612Z"
               fill="#FF276C"></path>
-            <text class="kid__recording-text" fill="#fff" text-anchor="middle" x="155" y="36">Записаться на
-              приём</text>
+            <text class="kid__recording-text" fill="#fff" text-anchor="middle" x="155" y="36">Записаться на приём</text>
           </svg>
           <span class="sedation-record-span">Записаться на приём</span>
         </a>

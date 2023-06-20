@@ -1653,7 +1653,7 @@ a {
   }
 
   .serves__options:not(:first-of-type) {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .serves__content.content {
@@ -6882,14 +6882,20 @@ a {
   }
 
   .module {
+    display: flex;
+    flex-direction: column;
     width: 328px;
-    height: 865px;
-    background-image: url(../img/module-mobile-bg.png);
-    background-position: center;
-    background-size: contain;
-    padding-left: 17px;
-    padding-right: 17px;
-    padding-top: 313px;
+    height: auto;
+    background-image: none;
+    background: linear-gradient(112deg, #7817B3 2.73%, #7224BF 52.2%, #4D2483 100%);
+    border-radius: 1rem;
+    padding: 30px 10px;
+    margin: 0 10px;
+  }
+
+  .module__close {
+    right: 0;
+    top: -30px;
   }
 
   .module__container {
@@ -6897,7 +6903,7 @@ a {
   }
 
   .module__title {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     text-align: center;
     font-size: 32px;
     line-height: 42px;
@@ -6913,7 +6919,7 @@ a {
 
   .module-form__feedback {
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .module-form__record {
@@ -6950,8 +6956,11 @@ a {
   }
 
   .module__warning {
+    position: relative;
     white-space: normal;
     text-align: center;
+    margin-top: 20px;
+    bottom: 0;
   }
 
   .burger-menu {
