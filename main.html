@@ -504,96 +504,214 @@
     <section class="screen serves">
       <div class="serves__content content content_serves">
         <h2 class="serves__title">Стоимость услуг</h2>
+        <!--
         <p class="serves__subtitle">
           Мы подбираем самые эффективные методики и технологии лечения <br />
           с учетом особенностей каждого пациента
         </p>
-        <div class="serves__list">
+        -->
+        <div class="serves__list combined-tabs__list">
+          <div class="serves__tabs">
+            <div data-tab="#tab-1" class="tabs__item tabs__item-active">Диагностика</div>
+            <div data-tab="#tab-2" class="tabs__item">Лечение кариеса</div>
+            <div data-tab="#tab-3" class="tabs__item">Гигиена полости
+              рта</div>
+            <div data-tab="#tab-4" class="tabs__item">Хирургическая
+              стоматология</div>
+            <div data-tab="#tab-5" class="tabs__item">Лечение в седации
+              (закись азота)</div>
+            <div data-tab="#tab-6" class="tabs__item">Лечение под
+              наркозом (севоран)</div>
+          </div>
           <div class="serves__info">
             <div class="options__wrap">
-              <ul class="serves__options serves__options-active">
-                <li class="options__item">
-                  <div class="option__text">
-                    <span class="options__title">Первичный прием детского стоматолога</span>
-                    <p class="options__desc"></p>
-                  </div>
-                  <div class="options__item-dots"></div>
-                  <div class="option__price">
-                    <span class="price__first">от 1 800 ₽</span>
-                    <span class="price__second">до 2 300 ₽</span>
-                  </div>
-                </li>
-                <li class="options__item">
-                  <div class="option__text">
-                    <span class="options__title">Пломбирование временного зуба композитной пломбой</span>
-                    <p class="options__desc">
-                      в зависимости от степени поражения
-                    </p>
-                  </div>
-                  <div class="options__item-dots"></div>
-                  <div class="option__price">
-                    <span class="price__first price__first-red">2 800 ₽</span>
-                    <span class="price__second price__first-cross">до 2 300 ₽</span>
-                  </div>
-                </li>
-                <li class="options__item">
-                  <div class="option__text">
-                    <span class="options__title">Лечение кариеса неинвазивным методом ICON</span>
-                    <p class="options__desc">
-                      С помощью специальных инструментов и вспомогательных
-                      растворов на зуб после
-                      предварительной подготовки наносится полимерный раствор,
-                      который затвердевает
-                      под воздействием ультрафиолета
-                    </p>
-                  </div>
-                  <div class="options__item-dots"></div>
-                  <div class="option__price">
-                    <span class="price__first">6 600 ₽</span>
-                    <span class="price__second"></span>
-                  </div>
-                </li>
-                <li class="options__item options__item-sale">
-                  <div class="option__text">
-                    <span class="options__title">Первичный прием детского стоматолога</span>
-                  </div>
-                  <div class="options__item-dots"></div>
-                  <div class="option__price">
-                    <span class="price__first">от 1 800 ₽</span>
-                    <span class="price__second"></span>
-                  </div>
-                </li>
-                <li class="options__item">
-                  <div class="option__text">
-                    <span class="options__title">Пломбирование временного зуба композитной пломбой</span>
-                    <p class="options__desc">
-                      в зависимости от степени поражения
-                    </p>
-                  </div>
-                  <div class="options__item-dots"></div>
-                  <div class="option__price">
-                    <span class="price__first price__first-red">2 800 ₽</span>
-                    <span class="price__second price__first-cross">до 2 300 ₽</span>
-                  </div>
-                </li>
-                <li class="options__item sale">
-                  <div class="option__text">
-                    <span class="options__title">Лечение кариеса неинвазивным методом ICON</span>
-                    <p class="options__desc">
-                      С помощью специальных инструментов и вспомогательных
-                      растворов на зуб после
-                      предварительной подготовки наносится полимерный раствор,
-                      который затвердевает
-                      под воздействием ультрафиолета
-                    </p>
-                  </div>
-                  <div class="options__item-dots"></div>
+              <ul id="tab-1" class="serves__options serves__options-active">
+                <div class="combined-tabs__head">
+                  Лечение кариеса
+                  <svg class="combined-tabs__arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="9"
+                    fill="none">
+                    <path stroke="#FF276C" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                      d="M2.046 2.326l6.138 4.461a3 3 0 003.488.029l6.21-4.36" />
+                  </svg>
+                </div>
+                <div class="combined-tabs__body combined-tabs__body_active">
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Первичный прием детского стоматолога</span>
+                      <p class="options__desc"></p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first">от 1 900 ₽</span>
+                      <span class="price__second">до 2 300 ₽</span>
+                    </div>
+                  </li>
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Пломбирование временного зуба композитной пломбой</span>
+                      <p class="options__desc">
+                        в зависимости от степени поражения
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first price__first-red">2 800 ₽</span>
+                      <span class="price__second price__first-cross">до 2 300 ₽</span>
+                    </div>
+                  </li>
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Лечение кариеса неинвазивным методом ICON</span>
+                      <p class="options__desc">
+                        С помощью специальных инструментов и вспомогательных
+                        растворов на зуб после
+                        предварительной подготовки наносится полимерный раствор,
+                        который затвердевает
+                        под воздействием ультрафиолета
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first">6 600 ₽</span>
+                      <span class="price__second"></span>
+                    </div>
+                  </li>
+                  <li class="options__item options__item-sale">
+                    <div class="option__text">
+                      <span class="options__title">Первичный прием детского стоматолога</span>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first">от 1 800 ₽</span>
+                      <span class="price__second"></span>
+                    </div>
+                  </li>
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Пломбирование временного зуба композитной пломбой</span>
+                      <p class="options__desc">
+                        в зависимости от степени поражения
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first price__first-red">2 800 ₽</span>
+                      <span class="price__second price__first-cross">до 2 300 ₽</span>
+                    </div>
+                  </li>
+                  <li class="options__item sale">
+                    <div class="option__text">
+                      <span class="options__title">Лечение кариеса неинвазивным методом ICON</span>
+                      <p class="options__desc">
+                        С помощью специальных инструментов и вспомогательных
+                        растворов на зуб после
+                        предварительной подготовки наносится полимерный раствор,
+                        который затвердевает
+                        под воздействием ультрафиолета
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
 
-                  <div class="option__price">
-                    <span class="price__first">6 600 ₽</span>
-                    <span class="price__second"></span>
-                  </div>
-                </li>
+                    <div class="option__price">
+                      <span class="price__first">6 600 ₽</span>
+                      <span class="price__second"></span>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+              <ul id="tab-2" class="serves__options">
+                <div class="combined-tabs__head">
+                  Диагностика
+                  <svg class="combined-tabs__arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="9"
+                    fill="none">
+                    <path stroke="#FF276C" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                      d="M2.046 2.326l6.138 4.461a3 3 0 003.488.029l6.21-4.36" />
+                  </svg>
+                </div>
+                <div class="combined-tabs__body">
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Первичный прием детского стоматолога</span>
+                      <p class="options__desc"></p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first">от 1 800 ₽</span>
+                      <span class="price__second">до 2 300 ₽</span>
+                    </div>
+                  </li>
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Пломбирование временного зуба композитной пломбой</span>
+                      <p class="options__desc">
+                        в зависимости от степени поражения
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first price__first-red">2 800 ₽</span>
+                      <span class="price__second price__first-cross">до 2 300 ₽</span>
+                    </div>
+                  </li>
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Лечение кариеса неинвазивным методом ICON</span>
+                      <p class="options__desc">
+                        С помощью специальных инструментов и вспомогательных
+                        растворов на зуб после
+                        предварительной подготовки наносится полимерный раствор,
+                        который затвердевает
+                        под воздействием ультрафиолета
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first">6 600 ₽</span>
+                      <span class="price__second"></span>
+                    </div>
+                  </li>
+                  <li class="options__item options__item-sale">
+                    <div class="option__text">
+                      <span class="options__title">Первичный прием детского стоматолога</span>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first">от 1 800 ₽</span>
+                      <span class="price__second"></span>
+                    </div>
+                  </li>
+                  <li class="options__item">
+                    <div class="option__text">
+                      <span class="options__title">Пломбирование временного зуба композитной пломбой</span>
+                      <p class="options__desc">
+                        в зависимости от степени поражения
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
+                    <div class="option__price">
+                      <span class="price__first price__first-red">2 800 ₽</span>
+                      <span class="price__second price__first-cross">до 2 300 ₽</span>
+                    </div>
+                  </li>
+                  <li class="options__item sale">
+                    <div class="option__text">
+                      <span class="options__title">Лечение кариеса неинвазивным методом ICON</span>
+                      <p class="options__desc">
+                        С помощью специальных инструментов и вспомогательных
+                        растворов на зуб после
+                        предварительной подготовки наносится полимерный раствор,
+                        который затвердевает
+                        под воздействием ультрафиолета
+                      </p>
+                    </div>
+                    <div class="options__item-dots"></div>
+
+                    <div class="option__price">
+                      <span class="price__first">6 600 ₽</span>
+                      <span class="price__second"></span>
+                    </div>
+                  </li>
+                </div>
               </ul>
             </div>
             <div class="info__banner">
@@ -619,472 +737,6 @@
             </div>
           </div>
         </div>
-        <ul class="serves__accordion">
-          <div class="accordion__item accordion__item-active">
-            <ul class="accordion__list">
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от <span class="serv__price-mobile">1 800 ₽</span> до <span
-                    class="serv__price-mobile">2 300 ₽</span></div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от 1 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!--
-          <div class="accordion__item">
-            <div class="accordion__btn">Лечение кариеса</div>
-            <ul class="accordion__list">
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от <span class="serv__price-mobile">1 800 ₽</span> до <span
-                    class="serv__price-mobile">2 300 ₽</span></div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от 1 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="accordion__item">
-            <div class="accordion__btn">Диагностика</div>
-            <ul class="accordion__list">
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от <span class="serv__price-mobile">1 800 ₽</span> до <span
-                    class="serv__price-mobile">2 300 ₽</span></div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от 1 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="accordion__item">
-            <div class="accordion__btn">Гигиена полости рта</div>
-            <ul class="accordion__list">
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от <span class="serv__price-mobile">1 800 ₽</span> до <span
-                    class="serv__price-mobile">2 300 ₽</span></div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от 1 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="accordion__item">
-            <div class="accordion__btn">Хирургическаястоматология</div>
-            <ul class="accordion__list">
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от <span class="serv__price-mobile">1 800 ₽</span> до <span
-                    class="serv__price-mobile">2 300 ₽</span></div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от 1 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="accordion__item">
-            <div class="accordion__btn">Лечение в седации</div>
-            <ul class="accordion__list">
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от <span class="serv__price-mobile">1 800 ₽</span> до <span
-                    class="serv__price-mobile">2 300 ₽</span></div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от 1 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="accordion__item">
-            <div class="accordion__btn">Лечение под наркозом</div>
-            <ul class="accordion__list">
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от <span class="serv__price-mobile">1 800 ₽</span> до <span
-                    class="serv__price-mobile">2 300 ₽</span></div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv sale">
-                <div class="serv__title">
-                  Первичный прием детского стоматолога
-                </div>
-                <div class="serv__desc"></div>
-                <div class="serv__price">от 1 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Лечение кариеса неинвазивным методом ICON
-                </div>
-                <div class="serv__desc">
-                  С помощью специальных инструментов и вспомогательных
-                  растворов на зуб после предварительной подготовки наносится
-                  полимерный раствор, который затвердевает под воздействием
-                  ультрафиолета
-                </div>
-                <div class="serv__price">6 800 ₽</div>
-              </li>
-              <li class="accordion__serv">
-                <div class="serv__title">
-                  Пломбирование временного зуба композитной пломбой
-                </div>
-                <div class="serv__desc">
-                  в зависимости от степени поражения
-                </div>
-                <div class="serv__price">
-                  <span class="price__first-red">2 800 ₽</span><span class="price__first-cross">2 300 ₽</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          -->
-        </ul>
-        <!--<img src="./img/banner-mobile.png" class="serves__banner-mobile">-->
       </div>
     </section>
     <section class="kid screen">
@@ -1550,8 +1202,11 @@
   <script src="./js/slider-gallery.js"></script>
   <!-- Карта -->
   <script src="./js/map.js"></script>
-  <!-- Навигация -->
+  <!-- Навигация 
   <script src="./js/header-nav.js"></script>
+  -->
+  <!-- Табы -->
+  <script src="./js/combined-tabs.js"></script>
 </body>
 
 </html>
