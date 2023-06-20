@@ -1531,7 +1531,6 @@ a {
   background: #fff9f4;
   color: #20305b;
   height: 97px;
-  max-width: 258px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1871,7 +1870,7 @@ a {
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 35.5%;
+  top: 10px;
   transform: translateY(-50%);
   left: -140px;
   width: 144.5px;
@@ -12625,8 +12624,10 @@ a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
+  max-width: 15px;
+  max-height: 15px;
   transform: translateY(-0.7px);
 }
 

@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
   const tabsContainer = document.querySelector(".combined-tabs__list");
-  const tabsBtns = tabsContainer.querySelectorAll(".tabs__item");
-  const tabsItems = tabsContainer.querySelectorAll(".serves__options");
+  const tabsBtns = tabsContainer && tabsContainer.querySelectorAll(".tabs__item");
+  const tabsItems = tabsContainer && tabsContainer.querySelectorAll(".serves__options");
 
   function onTabClick(item) {
     let currentBtn = item;
@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  tabsItems.forEach((item) => {
+  tabsItems && tabsItems.forEach((item) => {
     if (item.querySelector(".combined-tabs__head")) {
       const tabItem = tabsContainer.querySelector(`[data-tab="#${item.id}"]`);
 
@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   })
 
-  tabsBtns.forEach((item) => {
+  tabsBtns && tabsBtns.forEach((item) => {
     item.addEventListener("click", () => onTabClick(item));
   })
 })

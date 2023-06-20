@@ -1,5 +1,5 @@
 const module = document.querySelector(".module-wrap");
-const moduleSubmitForm = module.querySelector(".module__form");
+const moduleSubmitForm = module && module.querySelector(".module__form");
 const sectionCallback = document.querySelector(".callback");
 
 let regexPhone = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
@@ -29,7 +29,7 @@ const closeModule = () => {
   // enableScroll();
 };
 
-module.addEventListener("click", handleCloseModule);
+module && module.addEventListener("click", handleCloseModule);
 
 function handleModuleSubmit(e) {
   e.preventDefault();
@@ -38,7 +38,7 @@ function handleModuleSubmit(e) {
   module.querySelector(".module__submit-container").classList.add("module__submit-container_active");
 }
 
-moduleSubmitForm.addEventListener("submit", handleModuleSubmit)
+module && moduleSubmitForm.addEventListener("submit", handleModuleSubmit)
 
 var phoneInputs = document.querySelectorAll('.module-form__tel');
 
@@ -211,20 +211,7 @@ function handleSectionCallbackSubmit(e) {
   }
 }
 
-/*
-  xhr.open({
-    url: '/ajax.php',
-    method: 'post',
-    dataType: 'html',
-    data: {
-      phone: "phone"
-    },
-    success: function () {
-    }
-  });
-  */
-
-moduleSubmitForm.addEventListener("submit", handleModuleSubmit);
+  module && moduleSubmitForm.addEventListener("submit", handleModuleSubmit);
 if (sectionCallback) {
   sectionCallback.querySelector(".module__form").addEventListener("submit", handleSectionCallbackSubmit);
 }
