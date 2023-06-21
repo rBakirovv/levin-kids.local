@@ -2370,8 +2370,8 @@ a {
 }
 
 .doctor__text {
-  padding-top: calc(198px - 54px + 20px);
-  padding-bottom: 120px;
+  /*padding-top: calc(198px - 54px + 20px);*/
+  padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2412,7 +2412,19 @@ a {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #20305b;
-  margin-bottom: 25px;
+  margin: 0;
+  max-width: 290px;
+}
+
+.doctor__title-second-name {
+  font-size: 46px;
+  line-height: 52px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #20305b;
+  white-space: nowrap;
+  margin: 0 0 15px;
 }
 
 .doctor__subtitle {
@@ -2455,7 +2467,7 @@ a {
 
 @media screen and (max-width: 1400px) {
   .doctor__text {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 
   .content_doctor {
@@ -2480,7 +2492,7 @@ a {
 
 .content_doctor {
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   max-width: 1660px;
   margin: 0 auto;
 }
@@ -6615,6 +6627,13 @@ a {
     margin-bottom: 0px;
   }
 
+  .doctor__title-second-name {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+
   .doctor__experience {
     width: 136px;
     height: 28px;
@@ -9846,6 +9865,7 @@ a {
 
 .doctor-slider .doctor__img img {
   width: 100%;
+  max-height: 660px;
 }
 
 .doctor-swiper-review__item {
@@ -11473,6 +11493,34 @@ a {
   margin: 20px 0;
 }
 
+.doctor__review-item-container p {
+  font-family: 'TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #20305B;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.doctor__review-item-container_pink span {
+  color: #F3007A;
+}
+
+.doctor__review-item-container_blue span {
+  color: #006495;
+}
+
+.doctor__review-item-container {
+  display: flex;
+  gap: 5px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  padding: 6px 10px;
+}
+
 .doctor__aligners .doctor__img::after {
   content: "";
   position: absolute;
@@ -12767,6 +12815,69 @@ a {
 
 .header-menu_opened .header-menu__button-service-icon-close {
   display: block;
+}
+
+.menu__button-burger-ico {
+  width: 27px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu__button-burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FFF;
+  position: absolute;
+  left: 0;
+  transition: .3s all linear;
+}
+
+.burger__line_first {
+  top: 0;
+}
+
+.burger__line_second,
+.burger__line_third {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger__line_fourth {
+  bottom: 0;
+}
+
+.burger_active .burger__line_first,
+.burger_active .burger__line_fourth {
+  opacity: 0;
+}
+
+.burger_active .burger__line_second {
+  background-color: #FFF !important;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.burger_active .burger__line_third {
+  background-color: #FFF !important;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu__button-burger-ico_service .menu__button-burger-line {
+  height: 2px;
+  border-radius: 50%;
+  background-color: #FF276C;
+  transition: all 0.5s;
+}
+
+.menu__button-burger-ico_service {
+  width: 16px;
+  height: 12px;
+  transform: translateY(-0.5px);
+}
+
+.header-menu__button-service:hover .menu__button-burger-ico_service .menu__button-burger-line {
+  background-color: #FFF;
 }
 
 .inherit-link {

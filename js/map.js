@@ -6,6 +6,10 @@ window.addEventListener("DOMContentLoaded", function () {
   const emailElement = document.querySelector(".scheme__email");
   const emailCopyElement = document.querySelector(".scheme__email-copy");
 
+  var templateUrl = 'https://kids.doctorlevin.ru/wp-content/themes/kids';
+  var geoCoordinates = '55.689707,37.527299';
+
+
   ymaps.ready(init);
 
   let center;
@@ -24,7 +28,7 @@ window.addEventListener("DOMContentLoaded", function () {
       myStreet1 = new ymaps.Placemark(
         [55.690092, 37.52673], {}, {
           iconLayout: "default#image",
-          iconImageHref: "img/mapIcon.svg",
+          iconImageHref: templateUrl+"img/mapIcon.svg",
           iconImageSize: [93, 93],
           iconImageOffset: [-30, -60],
         }
@@ -32,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function () {
     myStreet2 = new ymaps.Placemark(
       [55.692865, 37.533091], {}, {
         iconLayout: "default#image",
-        iconImageHref: "img/metro-map-icon.svg",
+        iconImageHref: templateUrl+"img/metro-map-icon.svg",
         iconImageSize: [88, 88],
         iconImageOffset: [-30, -60],
       }
@@ -43,7 +47,7 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   coordElement.addEventListener("click", () => {
-    navigator.clipboard.writeText("info@dantistoff.ru")
+    navigator.clipboard.writeText(geoCoordinates)
       .then(() => {
         coordCopyElement.querySelector('.scheme__coord-copy-container').textContent = 'Скопировано в буфер обмена';
       })

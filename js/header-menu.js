@@ -2,15 +2,18 @@ window.addEventListener("DOMContentLoaded", function () {
   const html = document.querySelector("html");
   const headerWithMenu = document.querySelector(".header-with-menu");
   const headerButtonService = headerWithMenu.querySelector(".header-menu__button-service");
+  const burgerIcon = headerButtonService.querySelector(".menu__button-burger-ico_service");
   const headerMenu = document.querySelector(".header-menu");
   const mobileMenuButtonService = document.querySelector(".mobile-menu__button-service");
   const swipeMenu = document.querySelector(".swipe-menu");
   const swipeMenuContainer = swipeMenu.querySelector(".swipe-menu__container");
   const menuBackground = document.querySelector(".menu-background");
   const mobileMenu = document.querySelector(".mobile-menu");
+  const mobileMenuBurgerIcon = mobileMenu.querySelector(".menu__button-burger-ico");
 
   function handleMobileMenu() {
     mobileMenuButtonService.classList.toggle("mobile-menu__button-service_active");
+    mobileMenuButtonService.classList.toggle("burger_active");
     swipeMenu.classList.toggle("swipe-menu_active");
     menuBackground.classList.toggle("menu-background_active");
 
@@ -26,6 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
   function mobileMenuClose() {
     html.style.overflow = "visible";
     mobileMenuButtonService.classList.remove("mobile-menu__button-service_active");
+    mobileMenuButtonService.classList.remove("burger_active");
     swipeMenu.classList.remove("swipe-menu_active");
     menuBackground.classList.remove("menu-background_active");
     swipeMenu.style.transform = `translateY(150%)`;
@@ -35,6 +39,7 @@ window.addEventListener("DOMContentLoaded", function () {
     headerWithMenu.classList.toggle("header-menu_opened");
     headerMenu.classList.toggle("header-menu_open");
     menuBackground.classList.toggle("menu-background_active");
+    burgerIcon.classList.toggle("burger_active");
 
     if (html.style.overflow === "hidden") {
       html.style.overflow = "visible";
@@ -92,6 +97,7 @@ window.addEventListener("DOMContentLoaded", function () {
     // close мобильного меню
     if (document.querySelector(".swipe-menu_active")) {
       mobileMenuButtonService.classList.remove("mobile-menu__button-service_active");
+      burgerIcon.classList.remove("burger_active");
       swipeMenu.classList.remove("swipe-menu_active");
       menuBackground.classList.remove("menu-background_active");
       swipeMenu.style.transform = `translateY(150%)`;
