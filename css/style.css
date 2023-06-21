@@ -2554,12 +2554,12 @@ a {
 
 .swiper-slide {
   opacity: 0 !important;
-  transition: 0.3s;
+  transition: none !important;
 }
 
 .swiper-slide-active {
   opacity: 1 !important;
-  transition: 0.3s;
+  transition: none !important;
 }
 
 .swiper-slide {
@@ -3159,6 +3159,7 @@ a {
 .scheme__coord {
   text-decoration: none;
   border-bottom: 1px dashed #4782cd;
+  width: max-content;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
@@ -3173,7 +3174,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid #4782cd;
   transition: all 0.4s ease-in-out;
-  width: 200px;
+  width: max-content;
   font-weight: 400;
 }
 
@@ -12023,7 +12024,6 @@ a {
 }
 
 .before-after__before-image {
-  max-width: 70%;
   height: 270px;
 }
 
@@ -12050,7 +12050,6 @@ a {
 }
 
 .before-after__after-image {
-  max-width: 70%;
   height: 270px;
 }
 
@@ -12231,6 +12230,14 @@ a {
 
 .start-screen-braces {
   background-image: url(../img/braces.png);
+}
+
+.start-screen-braces .start__list {
+  max-width: 650px;
+}
+
+.start-screen-braces .start__item::after {
+  top: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -12440,7 +12447,7 @@ a {
   line-height: 31px;
   text-align: center;
   color: #20305B;
-  max-width: 184px;
+  max-width: 250px;
   margin: 5px auto 0;
 }
 
