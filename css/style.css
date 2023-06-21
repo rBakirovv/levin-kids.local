@@ -1987,7 +1987,7 @@ a {
   }
 
   .options__item-sale {
-    background: #FCEFE8 !important; 
+    background: #FCEFE8 !important;
   }
 
   .options__item-sale::before {
@@ -3903,7 +3903,7 @@ a {
   opacity: 0;
   pointer-events: none;
   flex-direction: column;
-  overflow: auto;
+  overflow: scroll;
   z-index: 99999;
   align-items: flex-end;
   transition: 0.5s ease;
@@ -3922,7 +3922,7 @@ a {
 
 .burger-menu {
   width: 100%;
-  min-height: 2390px;
+  min-height: auto;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -7039,7 +7039,7 @@ a {
 
   .burger-menu {
     width: 95%;
-    min-height: 1350px;
+    min-height: auto;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -7053,6 +7053,7 @@ a {
   .burger-menu__social {
     display: flex;
     height: 52px;
+    margin: 0 0 30px;
   }
 
   .burger-menu__social .social__link {
@@ -7075,7 +7076,7 @@ a {
   .burger-menu__nav .nav__list {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 42px;
+    margin-bottom: 0;
   }
 
   .burger-menu__nav .nav__item {
@@ -7333,6 +7334,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .burger-menu__social .social__list {
+    margin: 0 0 30px;
   }
 
   .social__item {
