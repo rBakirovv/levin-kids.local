@@ -112,7 +112,6 @@ a {
 .header-with-menu {
   position: sticky;
   pointer-events: none;
-  box-shadow: 0px 5px 15px rgba(103, 103, 103, 0.3);
 }
 
 .header__nav {
@@ -149,6 +148,7 @@ a {
   left: 0;
   width: 100%;
   background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(103, 103, 103, 0.3);
 }
 
 .header__nav-list-container {
@@ -6019,7 +6019,7 @@ a {
   }
 
   .start__item:last-child:after {
-    top: -31px;
+    top: -36px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -12593,6 +12593,7 @@ a {
 .header-menu-container {
   width: 100%;
   background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(103, 103, 103, 0.3);
 }
 
 .header-menu__button {
