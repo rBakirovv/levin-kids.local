@@ -38,13 +38,21 @@ window.addEventListener("DOMContentLoaded", function () {
         tabItem.classList.add("tabs__item-active");
         item.classList.add("serves__options-active");
 
-        const elementPosition = item.querySelector(".combined-tabs__head").getBoundingClientRect().top;
-        const offsetPosition = elementPosition;
-
-        window.scrollBy({
-          top: index === 0 ? offsetPosition - 85 : offsetPosition - tabsItems[0].clientHeight - 25,
-          behavior: "smooth"
-        });
+        if (index === 0) {
+          setTimeout(() => {
+            item.closest("section").scrollIntoView(({
+              block: "start",
+              behavior: "auto"
+            }));
+          }, 500)
+        } else {
+          setTimeout(() => {
+            tabsItems[index - 1].scrollIntoView(({
+              block: "start",
+              behavior: "auto"
+            }));
+          }, 500)
+        }
       })
     }
   })

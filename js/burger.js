@@ -17,6 +17,10 @@ window.addEventListener("DOMContentLoaded", function () {
     if (e.target.classList.contains("nav__item") || e.target.classList.contains("nav__link")) {
       closeMenu();
     };
+
+    if (e.target.classList.contains("burger-menu-wrap--active")) {
+      closeMenu();
+    }
   });
 
   menuOpenBtn.addEventListener("click", openMenu);
