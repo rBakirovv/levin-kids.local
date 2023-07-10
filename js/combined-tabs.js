@@ -27,6 +27,7 @@ window.addEventListener("DOMContentLoaded", function () {
       const tabItem = tabsContainer.querySelector(`[data-tab="#${item.id}"]`);
 
       item.querySelector(".combined-tabs__head").addEventListener("click", () => {
+
         tabsBtns.forEach(function (item) {
           item.classList.remove('tabs__item-active');
         });
@@ -38,21 +39,23 @@ window.addEventListener("DOMContentLoaded", function () {
         tabItem.classList.add("tabs__item-active");
         item.classList.add("serves__options-active");
 
+        
         if (index === 0) {
           setTimeout(() => {
             item.closest("section").scrollIntoView(({
               block: "start",
-              behavior: "auto"
+              behavior: "smooth"
             }));
-          }, 500)
+          }, 0)
         } else {
           setTimeout(() => {
             tabsItems[index - 1].scrollIntoView(({
               block: "start",
-              behavior: "auto"
+              behavior: "smooth"
             }));
-          }, 500)
+          }, 0)
         }
+        
       })
     }
   })

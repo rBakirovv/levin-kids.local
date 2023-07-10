@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Левин Кидс</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script type="text/javascript" charset="utf-8" defer src="./js/modalCallback.js"></script>
+</head>
+
+<body>
+  <div class="module-wrap">
+    <div class="module" id="module">
+      <div class="loader">
+        <div class="preloader">
+          <div class="preloader__container">
+            <span class="preloader__round"></span>
+          </div>
+        </div>
+      </div>
+      <button class="module__close">&#9587;</button>
+      <div class="module__warning">
+        Нажимая на кнопку, вы даете согласие на обработку персональных
+        данных и соглашаетесь c
+        <a class="module-warning__link" href="#">Политикой конфиденциальности</a>
+      </div>
+      <div class="module__container">
+        <div class="module__title">
+          Записаться <br class="module-space-desktop" />
+          на приём
+        </div>
+        <form action="" class="module__form">
+          <div class="module-form__input-container">
+            <input type="text" placeholder="Ваше имя" class="module-form__name module-form__input" required />
+          </div>
+          <div class="module-form__input-container">
+            <label class="module-form__label">
+              <span class="module-form-label__title">Контактный телефон</span>
+              <input type="tel" placeholder="+7 (ххх) ххх-хх-хх" class="module-form__tel input module-form__input"
+                required id="phone" name="phone" />
+              <span class="module-form-label__title-error">Неверный формат номера телефона</span>
+            </label>
+          </div>
+          <div class="module-form__feedback">
+            <button type="submit" class="btn-record module-form__record">
+              <svg width="347" height="72" viewBox="0 0 347 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="module-form__record-path"
+                  d="M0 15.744C0 7.39789 6.81255 0.656821 15.1582 0.744853L325.117 4.01436C332.41 4.09129 338.591 9.40365 339.763 16.6028L345.892 54.243C347.388 63.4304 340.242 71.748 330.934 71.6529L14.8468 68.4241C6.62272 68.3401 0 61.6494 0 53.4249V15.744Z"
+                  fill="#FF276C" />
+                <text class="module-form__record-text" fill="#fff" text-anchor="middle" x="174" y="43">Записаться на
+                  приём</text>
+              </svg>
+              <span class="module-form__record-span">Записаться на приём</span>
+            </button>
+            <div class="module__tel tel">
+              <a href="tel:+74957755821" class="module-form-tel__number tel__number">+7 495 775-58-21</a>
+              <span class="module-form-tel__text tel__text">ИЛИ ПРОСТО ПОЗВОНИТЕ</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="module__submit-container">
+        <h3 class="module__submit-title">
+          Заявка
+          принята
+        </h3>
+        <p class="module__submit-subtitle">
+          Вашая заявка отправлена и находится
+          на рассмотрении. Наш специалист изучит
+          её и перезвонит в ближайшее время
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="/" class="inherit-link mobile-menu__item">
+      <div class="mobile-menu__button">
+        <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.53243 13.1298C6.79691 12.9209 6.78319 12.5156 6.5052 12.325L4.30113 10.8144C4.01842 10.6206 4.01005 10.2063 4.28471 10.0013L6.21012 8.56399C6.35999 8.45211 6.43489 8.26596 6.40428 8.08146L6.33343 7.6545C6.26595 7.24788 5.76311 7.09296 5.4785 7.3911L4.41674 8.50336C4.09735 8.83795 3.53393 8.59672 3.55563 8.13466L3.89311 0.947523C3.90519 0.690387 3.72006 0.466105 3.46529 0.429228L1.10996 0.0882924C0.795621 0.0427913 0.519073 0.298092 0.539353 0.615061L1.36246 13.4796C1.38061 13.7634 1.63152 13.9749 1.91431 13.9449L2.86653 13.8436C3.11174 13.8175 3.30132 13.6166 3.31308 13.3702L3.32825 13.0528C3.34808 12.6375 3.83671 12.4264 4.15269 12.6967L5.24602 13.6319C5.42752 13.7872 5.69349 13.7924 5.88093 13.6444L6.53243 13.1298Z"
+            fill="#284795" />
+          <path
+            d="M8.09536 6.25275C7.84071 6.30456 7.66819 6.5428 7.69843 6.8009L8.34789 12.3443C8.38304 12.6444 8.67418 12.8449 8.96705 12.7709L10.2721 12.4409C10.4935 12.385 10.6489 12.1861 10.6496 11.9578L10.6675 6.34305C10.6685 6.02621 10.3783 5.78833 10.0678 5.8515L8.09536 6.25275ZM10.132 3.32853C10.132 3.73199 9.99849 4.07493 9.73152 4.35735C9.46455 4.63977 9.14489 4.78098 8.77254 4.78098C8.40019 4.78098 8.08053 4.63977 7.81356 4.35735C7.54659 4.07493 7.4131 3.73199 7.4131 3.32853C7.4131 2.9318 7.54659 2.59222 7.81356 2.3098C8.08053 2.02738 8.40019 1.88617 8.77254 1.88617C9.14489 1.88617 9.46455 2.02738 9.73152 2.3098C9.99849 2.59222 10.132 2.9318 10.132 3.32853Z"
+            fill="#284795" />
+          <path
+            d="M15.0955 11.3775C14.3508 11.2498 14.0909 10.5841 14.3157 9.3804C14.421 8.79539 14.6353 8.36503 14.9585 8.08934C15.2465 7.83381 15.5697 7.73631 15.928 7.79683C16.6657 7.92459 16.9256 8.5903 16.7079 9.79395C16.5954 10.379 16.3812 10.8127 16.065 11.0951C15.777 11.3439 15.4538 11.438 15.0955 11.3775ZM17.6305 1.30678C17.3755 1.32652 17.1766 1.53547 17.1693 1.7911L17.0522 5.9141C17.0431 6.23348 16.7409 6.46134 16.4276 6.39902C15.7841 6.27106 15.2382 6.22258 14.7899 6.2536C13.715 6.34102 12.8227 6.73439 12.1132 7.43372C11.4106 8.13977 11.098 8.95005 11.1753 9.86455C11.2525 10.7723 11.6987 11.5187 12.5136 12.1037C13.3286 12.6888 14.2735 12.9409 15.3484 12.8602C15.5904 12.8413 15.8323 12.8025 16.0743 12.7437C16.2203 12.7082 16.363 12.8257 16.3467 12.9752V12.9752C16.3361 13.0729 16.3951 13.1648 16.4883 13.1957L18.3104 13.8008C18.6166 13.9025 18.9376 13.6917 18.966 13.3703L19.9965 1.70768C20.0237 1.39986 19.768 1.14131 19.4599 1.16516L17.6305 1.30678Z"
+            fill="#284795" />
+          <path
+            d="M27.362 10.1167C27.2567 9.78722 26.9862 9.45437 26.5506 9.11816C26.2836 8.9097 25.834 8.61719 25.2017 8.24063C24.5384 7.84949 24.1371 7.58021 23.9981 7.43279C23.9588 7.39117 23.9449 7.33383 23.9475 7.27667C23.9526 7.16266 23.9808 7.08388 24.0319 7.04035C24.1935 6.89914 24.5413 6.90922 25.0752 7.0706L25.7286 7.30259L25.8996 7.36494C26.0587 7.42294 26.2367 7.36367 26.3293 7.2219V7.2219L27.2621 5.83685C27.3704 5.67596 27.3306 5.45801 27.1724 5.34582V5.34582C26.6946 5.00288 25.9078 4.79779 24.8118 4.73055C23.8352 4.67675 23.073 4.73391 22.525 4.90202C21.4993 5.21134 20.9056 5.76609 20.744 6.56628C20.737 6.6268 20.73 6.68732 20.7229 6.74784C20.6738 7.23199 20.8108 7.69933 21.1339 8.14986C21.4571 8.60038 21.9208 8.97022 22.525 9.25937L22.8622 9.42075C24.1093 9.99109 24.8192 10.4123 24.9919 10.6845C25.0272 10.7401 25.0035 10.8264 24.9488 10.8631V10.8631C24.8504 10.9304 24.7169 10.9909 24.5483 11.0447C24.1198 11.1993 23.5929 11.1892 22.9676 11.0144C22.3493 10.8396 21.9348 10.5874 21.7241 10.2579V10.2579C21.5646 10.0104 21.1905 10.0532 21.0911 10.3304L20.6762 11.4871C20.6332 11.6072 20.6548 11.7411 20.7335 11.8415V11.8415C21.1972 12.4332 22.0929 12.7997 23.4207 12.9409C24.7486 13.0821 25.7954 12.9241 26.5611 12.4669C26.9897 12.2113 27.2707 11.8818 27.4042 11.4784C27.5447 11.0682 27.5307 10.6143 27.362 10.1167Z"
+            fill="#284795" />
+        </svg>
+      </div>
+      <span class="mobile-menu__text">О центре</span>
+    </a>
+    <a href="/" class="inherit-link mobile-menu__item">
+      <div class="mobile-menu__button">
+        <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.82027 7.48824C9.46636 5.39339 7.58069 0.0045227 4.91084 1.91336C2.241 3.82219 0.101057 7.36708 1.34689 8.61541C2.59272 9.86373 6.30292 10.2048 7.02918 9.70462C7.61019 9.3045 8.46533 8.06032 8.82027 7.48824ZM3.74526 7.92692C4.39445 8.51057 6.91351 8.87077 7.45547 8.26796C7.99744 7.66514 7.25342 5.77754 6.60423 5.19389C5.95504 4.61023 4.72751 5.00115 4.18554 5.60397C3.64358 6.20679 3.09607 7.34327 3.74526 7.92692Z"
+            fill="#284795" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.7038 8.02698C22.8434 8.50444 28.0652 6.19625 25.9501 3.68664C23.8351 1.17703 20.1312 -0.674261 18.9859 0.666885C17.8406 2.00803 17.7957 5.7336 18.352 6.41779C18.797 6.96515 20.1053 7.71865 20.7038 8.02698ZM19.8629 3.00308C19.3327 3.69662 19.174 6.23634 19.818 6.72865C20.462 7.22097 22.2844 6.32922 22.8146 5.63567C23.3448 4.94213 22.8575 3.74957 22.2135 3.25725C21.5695 2.76494 20.3931 2.30953 19.8629 3.00308Z"
+            fill="#284795" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M14.5741 20.9665C19.9367 20.9665 24.8485 17.4786 24.8485 13.1761C24.8485 8.87353 21.8 5.38562 14.5741 5.38562C6.78365 5.38562 4.86426 8.87353 4.86426 13.1761C4.86426 17.4786 9.21151 20.9665 14.5741 20.9665ZM14.9071 10.8051C11.9774 10.8051 10.3909 12.1599 9.93929 13.289L9.90924 13.3639C9.44111 14.5293 8.42908 17.0489 11.6329 18.5955C14.9071 20.1762 18.0743 19.273 19.0904 18.2568C20.1066 17.2407 21.913 10.8051 14.9071 10.8051ZM11.4999 9.00002C11.4999 9.5523 11.0522 10 10.4999 10C9.94762 10 9.4999 9.5523 9.4999 9.00002C9.4999 8.44773 9.94762 8.00002 10.4999 8.00002C11.0522 8.00002 11.4999 8.44773 11.4999 9.00002ZM17.4999 9.00002C18.0522 9.00002 18.4999 8.5523 18.4999 8.00002C18.4999 7.44773 18.0522 7.00002 17.4999 7.00002C16.9476 7.00002 16.4999 7.44773 16.4999 8.00002C16.4999 8.5523 16.9476 9.00002 17.4999 9.00002Z"
+            fill="#284795" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M18.4448 16.1239C18.5317 16.2662 18.5141 16.4738 18.4054 16.5877C17.4462 17.5923 16.507 17.9778 15.5501 17.9991C14.605 18.02 13.6548 17.6846 12.6769 17.2845C12.5441 17.2302 12.47 17.0451 12.5115 16.8712C12.5531 16.6972 12.6944 16.6003 12.8273 16.6546C13.8035 17.054 14.6852 17.3582 15.5416 17.3392C16.3861 17.3205 17.2177 16.9864 18.0905 16.0723C18.1992 15.9585 18.3578 15.9815 18.4448 16.1239Z"
+            fill="#284795" />
+          <path
+            d="M16.1062 12.5269C16.1062 12.9011 15.5384 13.4302 14.9772 13.4302C14.416 13.4302 13.8481 12.9011 13.8481 12.5269C13.8481 12.1528 14.416 12.0753 14.9772 12.0753C15.5384 12.0753 16.1062 12.1528 16.1062 12.5269Z"
+            fill="#284795" />
+        </svg>
+      </div>
+      <span class="mobile-menu__text">Врачи</span>
+    </a>
+    <div class="mobile-menu__item mobile-menu__item-centered">
+      <div class="mobile-menu__button mobile-menu__button-service">
+        <div class="mobile-menu__button-service-ico"></div>
+      </div>
+      <div class="mobile-menu__button-border">
+      </div>
+      <span class="mobile-menu__text">Услуги</span>
+    </div>
+    <a href="/" class="inherit-link mobile-menu__item">
+      <div class="mobile-menu__button">
+        <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.09351 0.117253V21.078L6.84659 20.2536L8.10182 11.9957C13.1671 12.0724 15.4452 9.95837 14.9358 5.65353C14.4335 1.34172 10.8194 -0.503704 4.09351 0.117253ZM8 4C10.435 4.02093 12.6334 5.01165 12.6125 6.9094C12.2427 8.75832 9.89312 9.63256 7.5 9.5L8 4Z"
+            fill="#284795" />
+          <path d="M13.3333 15L14.5 17L1.08333 17L0.5 14L13.3333 15Z" fill="#284795" />
+        </svg>
+      </div>
+      <span class="mobile-menu__text">Цены</span>
+    </a>
+    <a href="/" class="inherit-link mobile-menu__item">
+      <div class="mobile-menu__button">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.42069 10.4962C7.10652 9.19252 6.11584 7.73282 5.45763 6.25194C5.31836 5.93883 5.40035 5.57223 5.64409 5.33043L7.18458 4.57718C7.93826 3.8295 7.31768 2.61382 6.65948 1.96085L5.34082 0.652689C4.46359 -0.217563 3.04159 -0.217563 2.16436 0.652689L1.43202 1.3792C0.599711 2.20488 -0.18573 3.87524 0.0389133 5.05637C0.593783 7.96798 3.27463 11.7052 6.02539 14.434C8.77616 17.1629 11.44 18.4161 14.375 18.9666C15.5656 19.1894 16.7786 18.255 17.6109 17.4293L18.3421 16.7039C19.2193 15.8336 19.2193 14.423 18.3421 13.5527L17.0245 12.2456C16.3663 11.5927 15.2993 11.5927 14.6422 12.2456L13.5873 13.8089C13.3435 14.0507 12.961 13.5527 12.699 13.4379C11.2063 12.7838 9.73485 11.7999 8.42069 10.4962Z"
+            fill="#284795" />
+        </svg>
+      </div>
+      <span class="mobile-menu__text">Контакты</span>
+    </a>
+  </div>
+  <div class="swipe-menu">
+    <div class="swipe-menu__scroll-item">
+      <div class="swipe-menu__scroll-dot"></div>
+    </div>
+    <div class="swipe-menu__container">
+      <div class="swipe-menu__banners-container">
+        <div class="swipe-menu__banner">
+          <span class="swipe-menu__banner-date">до 30 апреля</span>
+          <p class="swipe-menu__banner-title">Комплексный
+            Check-UP для детей
+          </p>
+          <div class="swipe-menu__banner-price">
+            <span class="swipe-menu__banner-price-before">4 900 ₽</span>
+            <span class="swipe-menu__banner-price-after">8 600 ₽</span>
+          </div>
+          <a href="/" class="inherit-link swipe-menu__banner-button">Подробнее</a>
+        </div>
+      </div>
+      <div class="swipe-menu__banners-container">
+        <div class="swipe-menu__banner swipe-menu__banner_small">
+          <p class="swipe-menu__banner-title">Лечение
+            зубов во сне
+          </p>
+          <a href="/" class="inherit-link swipe-menu__banner-button">Подробнее</a>
+        </div>
+        <div class="swipe-menu__banner swipe-menu__banner_small">
+          <p class="swipe-menu__banner-title">Лечение
+            зубов во сне
+          </p>
+        </div>
+      </div>
+      <ul class="accordions-list accordions-list__swipe-menu">
+        <li class="accordion-item">
+          <div class="accordion-head">
+            <span>Лечение зубов</span>
+            <svg class="accordion-arrow-svg" width="9" height="20" viewBox="0 0 9 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 17.7646L5.96069 11.6269C6.7143 10.5899 6.72581 9.18873 5.98933 8.13956L1.63004 1.92935"
+                stroke="#FF276C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="accordion-body">
+            <ul class="accordion-items-list">
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Лечение кариеса</a>
+              </li>
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Лечение пульпита</a>
+              </li>
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Профессианальная гигиена</a>
+              </li>
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Гермитизация фиссур</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="accordion-item">
+          <div class="accordion-head">
+            <span>Лечение кариеса</span>
+            <svg class="accordion-arrow-svg" width="9" height="20" viewBox="0 0 9 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 17.7646L5.96069 11.6269C6.7143 10.5899 6.72581 9.18873 5.98933 8.13956L1.63004 1.92935"
+                stroke="#FF276C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="accordion-body">
+            <ul class="accordion-items-list">
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Лечение кариеса</a>
+              </li>
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Лечение пульпита</a>
+              </li>
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Профессианальная гигиена</a>
+              </li>
+              <li class="accordion-item-list">
+                <a href="/" class="inherit-link accordion-item-link">Гермитизация фиссур</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-menu">
+    <div class="header-menu__navigation">
+      <div class="header-menu__navigation-column">
+        <div class="header-menu__navigation-links">
+          <p class="header-menu-link-title">Гигиена и профилактика</p>
+          <a href="/" class="inherit-link header-menu-link">Лечение кариеса</a>
+          <a href="/" class="inherit-link header-menu-link">Лечение пульпита</a>
+          <a href="/" class="inherit-link header-menu-link">Гигиеническая чистка</a>
+          <a href="/" class="inherit-link header-menu-link">Коронки на детские зубы</a>
+        </div>
+        <div class="header-menu__navigation-links">
+          <p class="header-menu-link-title">Лечение зубов</p>
+          <a href="/" class="inherit-link header-menu-link">Лечение кариеса</a>
+          <a href="/" class="inherit-link header-menu-link">Лечение пульпита</a>
+        </div>
+      </div>
+      <div class="header-menu__navigation-column">
+        <div class="header-menu__navigation-links">
+          <p class="header-menu-link-title">Хирургия</p>
+          <a href="/" class="inherit-link header-menu-link">Лечение кариеса</a>
+        </div>
+        <div class="header-menu__navigation-links">
+          <p class="header-menu-link-title">Гигиена</p>
+          <a href="/" class="inherit-link header-menu-link">Лечение кариеса</a>
+          <a href="/" class="inherit-link header-menu-link">Лечение пульпита</a>
+        </div>
+      </div>
+      <div class="header-menu__navigation-column">
+        <div class="header-menu__navigation-links">
+          <p class="header-menu-link-title">Детская ортодонтия</p>
+          <a href="/" class="inherit-link header-menu-link">Лечение кариеса</a>
+          <a href="/" class="inherit-link header-menu-link">Лечение пульпита</a>
+        </div>
+      </div>
+    </div>
+    <div class="info__banner">
+      <img src="./img/lable.svg" alt="" class="banner__lable">
+      <div class="info__banner-container header-menu__banner">
+        <span class="banner__title">Комплексный приём</span>
+        <span class="banner__subtitle">Перед школой или детским садом</span>
+        <ul class="banner__list">
+          <li class="banner__item">
+            Консультация детского стоматолога
+          </li>
+          <li class="banner__item">Профессиональная гигиена</li>
+          <li class="banner__item">Фторирование</li>
+        </ul>
+        <div class="banner__price">
+          <span class="banner__first">8 600 ₽</span>
+          <span class="banner__second">4 900 ₽</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-background"></div>
+  <header class="header header-with-menu">
+    <div class="header-fix-wrapp header-fix-wrap-menu">
+      <div class="header__container container container_header">
+        <a href="./index.html" class="header__logo logo"></a>
+        <div class="header__address address">
+          <div class="address__img"></div>
+          <div class="address__desc address__desc_header">
+            <span class="address__name">Университет</span>
+            <span class="address__street">Проспект Вернадского, 8а</span>
+          </div>
+        </div>
+        <div class="header__tel tel">
+          <a href="tel:+74957755821" class="tel__number">+7 495 775-58-21</a>
+          <span class="tel__text">Задайте интересующий вопрос</span>
+        </div>
+        <a href="javascript:openModule();" class="btn-record header__record">
+          <svg width="251" height="61" viewBox="0 0 251 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header__record-path"
+              d="M0 15.6848C0 7.32871 6.8282 0.583609 15.1837 0.685919L232.123 3.34227C239.532 3.43299 245.765 8.91981 246.794 16.2575L250.575 43.2104C251.851 52.3059 244.726 60.4019 235.542 60.293L14.8222 57.6758C6.60783 57.5784 0 50.8917 0 42.6768V15.6848Z"
+              fill="#FF276C" />
+            <text class="header__record-text" fill="#fff" text-anchor="middle" x="125" y="36">Записаться на приём</text>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="header-menu-container">
+      <div class="header-menu-wrapper container">
+        <div class="header-menu__button header-menu__button-service">
+          <div class="header-menu__button-service-icon"></div>
+          Услуги клиники
+        </div>
+        <div class="header-menu__button header-menu__button-dropdown">
+          О клинике
+          <svg class="header-menu__arrow-svg" width="14" height="6" viewBox="0 0 14 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="header-menu__arrow-path"
+              d="M1.5177 1.00439L5.00234 4.15401C6.13161 5.17471 7.84405 5.1908 8.98782 4.19144L12.5172 1.10771"
+              stroke="#FF276C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <ul class="navigation-item__dropdown">
+            <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+                class="inherit-link">Все цены</a></li>
+            <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+                class="inherit-link">Онлайн оплата</a></li>
+            <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+                class="inherit-link">Лечение в рассрочку</a></li>
+            <li class="navigation-item__dropdown-item navigation-item__dropdown-item_text"><a href="#"
+                class="inherit-link">Программа лояльности</a></li>
+          </ul>
+        </div>
+        <a href="/" class="inherit-link header-menu__button">Детские врачи</a>
+        <a href="/" class="inherit-link header-menu__button">Цены</a>
+        <a href="/" class="inherit-link header-menu__button">Контакты</a>
+      </div>
+    </div>
+    <div class="header__nav-scroll nav">
+      <div class="header__container container header__nav-list-container container_header">
+        <ul class="nav__list">
+          <li class="nav__item nav__item_hedaer">
+            <a href="#how-going-sed" class="nav__link">Общий наркоз</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-video" class="nav__link">Видео об услуге</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#who-suits" class="nav__link">Для кого</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-advantages" class="nav__link">Преимущества</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-stages" class="nav__link">Этапы лечения</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#sedation-video" class="nav__link">Видео об услуге</a>
+          </li>
+          <li class="nav__item nav__item_hedaer">
+            <a href="#who-suits" class="nav__link">Для кого</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section id="start-screen" class="start-screen start-screen-doctors screen">
+      <div class="screen__content content">
+        <div class="start__title">
+          Команда врачей
+        </div>
+        <div class="start__subtitle">
+          Профессиональный осмотр и чистка поможет
+          все стоматологические проблемы у ребёнка
+        </div>
+        <ul class="start__list">
+          <li class="start__item">
+            <b>Врачи высшей категории</b> и кандидаты наук
+          </li>
+          <li class="start__item">
+            <b>Обучаем весь персонал</b> на курсах и семинарах
+          </li>
+          <li class="start__item">
+            <b>Персональный подход</b> к любому пациенту
+          </li>
+          <li class="start__item">
+            Узкие специалисты <b>по вашей проблеме</b>
+          </li>
+        </ul>
+        <a href="javascript:openModule();" class="btn-record sedation-record">
+          <svg width="313" height="59" viewBox="0 0 313 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="sedation-record__path"
+              d="M2.07726 14.4612C2.65965 6.59969 9.22786 0.530389 17.1108 0.569555L292.477 1.93771C299.734 1.97377 305.925 7.20036 307.177 14.3489L311.889 41.2409C313.507 50.4776 306.348 58.9179 296.971 58.8288L14.9986 56.1519C6.33461 56.0696 -0.458101 48.6851 0.182017 40.0444L2.07726 14.4612Z"
+              fill="#FF276C" />
+            <text class="kid__recording-text" fill="#fff" text-anchor="middle" x="155" y="36">Записаться на
+              приём</text>
+          </svg>
+          <span class="sedation-record-span">Записаться на приём</span>
+        </a>
+      </div>
+    </section>
+    <section id="doctors-list" class="doctors-list">
+      <div class="doctors-list__container">
+        <div class="sorting__item-container">
+          <p class="sorting__title">Выберите специализацию врача</p>
+          <ul class="sorting__points-lsit">
+            <li data-filter="*" class="sorting__points-lsit-item sorting__points-lsit-item_active filter-point">
+              Все специалисты
+            </li>
+            <li data-filter=".doc-1" class="sorting__points-lsit-item filter-point">
+              Детский стоматолог
+            </li>
+            <li data-filter=".doc-2" class="sorting__points-lsit-item filter-point">
+              Ортодонт
+            </li>
+            <li data-filter=".doc-3" class="sorting__points-lsit-item filter-point">
+              Хирург
+            </li>
+            <li data-filter=".doc-4" class="sorting__points-lsit-item filter-point">
+              Анестезиолог
+            </li>
+          </ul>
+          <div class="sorting-dropdown sorting-dropdown_mob sorting-dropdown_specializations">
+            <span class="sorting-dropdown__text">
+              Все специалисты
+            </span>
+            <svg class="sorting-dropdown__arrow-svg" width="9" height="15" viewBox="0 0 9 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="sorting-dropdown__arrow-path" d="M1 1.50024L7 7.50024L1 13.5002" stroke="#8993AA"
+                stroke-width="2"></path>
+            </svg>
+            <ul class="sorting__points-lsit">
+              <li data-filter="*" class="sorting__points-lsit-item sorting__points-lsit-item_active filter-point">
+                Все специалисты
+              </li>
+              <li data-filter=".doc-1" class="sorting__points-lsit-item filter-point">
+                Детский стоматолог
+              </li>
+              <li data-filter=".doc-2" class="sorting__points-lsit-item filter-point">
+                Ортодонт
+              </li>
+              <li data-filter=".doc-3" class="sorting__points-lsit-item filter-point">
+                Хирург
+              </li>
+              <li data-filter=".doc-4" class="sorting__points-lsit-item filter-point">
+                Анестезиолог
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="doctors-list__cards-container">
+          <div class="specialist-card doc-1">
+            <div class="specialist-card__image-container">
+              <div class="exp-text exp-text_orange">стаж 24 года</div>
+              <img class="specialist-card__image" src="./img/specialist-card-1.png" alt="">
+            </div>
+            <div class="specialist-card__text-container">
+              <div class="specialist-card__doctor-info specialist-card__doctor-info_orange">
+                <p>Зиновьев Сергей Алексеевич</p>
+                <span>детский стоматолог</span>
+              </div>
+              <div class="specialist-card__description">
+                <span>Спасает безнадежные зубы, приговорили и других клиниках текст в полные длинные две строки</span>
+              </div>
+              <a href="javascript:openModule();" class="btn-record specialist-card-record">
+                <svg width="370" height="60" viewBox="0 0 370 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="btn-record-path"
+                    d="M0.5 15.1254C0.5 6.79234 7.29211 0.0565626 15.6249 0.125956L348.626 2.89908C355.695 2.95796 361.764 7.94482 363.192 14.8686L368.751 41.8208C370.68 51.1758 363.49 59.9273 353.939 59.8503L15.3791 57.12C7.14225 57.0536 0.5 50.3576 0.5 42.1205V15.1254Z"
+                    fill="#FF276C" />
+                  <text class="kid__recording-text" fill="#fff" text-anchor="middle" x="185" y="36">Записаться на
+                    приём</text>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="specialist-card doc-2">
+            <div class="specialist-card__image-container">
+              <div class="exp-text exp-text_green">стаж 24 года</div>
+              <img class="specialist-card__image" src="./img/specialist-card-2.png" alt="">
+            </div>
+            <div class="specialist-card__text-container">
+              <div class="specialist-card__doctor-info specialist-card__doctor-info_green">
+                <p>Зиновьев Сергей Алексеевич</p>
+                <span>детский стоматолог</span>
+              </div>
+              <div class="specialist-card__description">
+                <span>Спасает безнадежные зубы, приговорили и других клиниках текст в полные длинные две строки</span>
+              </div>
+              <a href="javascript:openModule();" class="btn-record specialist-card-record">
+                <svg width="370" height="60" viewBox="0 0 370 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="btn-record-path"
+                    d="M0.5 15.1254C0.5 6.79234 7.29211 0.0565626 15.6249 0.125956L348.626 2.89908C355.695 2.95796 361.764 7.94482 363.192 14.8686L368.751 41.8208C370.68 51.1758 363.49 59.9273 353.939 59.8503L15.3791 57.12C7.14225 57.0536 0.5 50.3576 0.5 42.1205V15.1254Z"
+                    fill="#FF276C" />
+                  <text class="kid__recording-text" fill="#fff" text-anchor="middle" x="185" y="36">Записаться на
+                    приём</text>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="specialist-card doc-3">
+            <div class="specialist-card__image-container">
+              <div class="exp-text exp-text_blue">стаж 24 года</div>
+              <img class="specialist-card__image" src="./img/specialist-card-1.png" alt="">
+            </div>
+            <div class="specialist-card__text-container">
+              <div class="specialist-card__doctor-info specialist-card__doctor-info_blue">
+                <p>Зиновьев Сергей Алексеевич</p>
+                <span>детский стоматолог</span>
+              </div>
+              <div class="specialist-card__description">
+                <span>Спасает безнадежные зубы, приговорили и других клиниках текст в полные длинные две строки</span>
+              </div>
+              <a href="javascript:openModule();" class="btn-record specialist-card-record">
+                <svg width="370" height="60" viewBox="0 0 370 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="btn-record-path"
+                    d="M0.5 15.1254C0.5 6.79234 7.29211 0.0565626 15.6249 0.125956L348.626 2.89908C355.695 2.95796 361.764 7.94482 363.192 14.8686L368.751 41.8208C370.68 51.1758 363.49 59.9273 353.939 59.8503L15.3791 57.12C7.14225 57.0536 0.5 50.3576 0.5 42.1205V15.1254Z"
+                    fill="#FF276C" />
+                  <text class="kid__recording-text" fill="#fff" text-anchor="middle" x="185" y="36">Записаться на
+                    приём</text>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="specialist-card doc-4">
+            <div class="specialist-card__image-container">
+              <div class="exp-text exp-text_purple">стаж 24 года</div>
+              <img class="specialist-card__image" src="./img/specialist-card-1.png" alt="">
+            </div>
+            <div class="specialist-card__text-container">
+              <div class="specialist-card__doctor-info specialist-card__doctor-info_purple">
+                <p>Зиновьев Сергей Алексеевич</p>
+                <span>детский стоматолог</span>
+              </div>
+              <div class="specialist-card__description">
+                <span>Спасает безнадежные зубы, приговорили и других клиниках текст в полные длинные две строки</span>
+              </div>
+              <a href="javascript:openModule();" class="btn-record specialist-card-record">
+                <svg width="370" height="60" viewBox="0 0 370 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="btn-record-path"
+                    d="M0.5 15.1254C0.5 6.79234 7.29211 0.0565626 15.6249 0.125956L348.626 2.89908C355.695 2.95796 361.764 7.94482 363.192 14.8686L368.751 41.8208C370.68 51.1758 363.49 59.9273 353.939 59.8503L15.3791 57.12C7.14225 57.0536 0.5 50.3576 0.5 42.1205V15.1254Z"
+                    fill="#FF276C" />
+                  <text class="kid__recording-text" fill="#fff" text-anchor="middle" x="185" y="36">Записаться на
+                    приём</text>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contacts contacts-sedation screen">
+      <div class="contacts__teeth"></div>
+      <div class="contacts__teeth"></div>
+      <div class="contacts__content content content_contacts">
+        <div class="contacts__title">контактная информация</div>
+        <div class="contacts__title-mobile">Контакты</div>
+        <ul class="contacts__social">
+          <li class="social__link">
+            <img src="./img/social-addres.svg" alt="" class="social__img" />
+            <p class="social__link-title">Университет</p>
+            <p class="social__link-subtitle">пр. Вернадского, д. 8А</p>
+          </li>
+          <li class="social__link">
+            <img src="./img/social-email.svg" alt="" class="social__img" />
+            <p class="social__link-title">info@doctorlevin.ru</p>
+            <p class="social__link-subtitle">Пишите нам</p>
+          </li>
+          <li class="social__link">
+            <img src="./img/social-tel.svg" alt="" class="social__img" />
+            <p class="social__link-title">+7 (495) 775-58-21</p>
+            <p class="social__link-subtitle">Звоните с 9:00 до 21:00</p>
+          </li>
+        </ul>
+        <div class="contacts__card">
+          <div class="card__title">
+            Доктор Левин
+            <img class="card__kids" src="./img/card-title.svg" alt="" />
+          </div>
+          <div class="card__address card__line">
+            <span class="card__clinck">Адрес клиники</span>
+            <div class="card__street">
+              г. Москва, ул. Льва Толстого, стр.5
+            </div>
+            <div class="card__scheme">
+              <span class="scheme__coord">Координаты <span class="coord-copy">55.732120.37.588526</span></span>
+              <div class="scheme__coord-copy">
+                <div class="scheme__coord-copy-container">
+                  Скопировать координаты
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__metro card__line">
+            <span class="card__clinck">Адрес клиники</span>
+            <div class="card__street">
+              <div class="card__street_metro">
+                <div>
+                  <img src="./img/metro-icon.svg" alt="" class="metro__icon" />
+                  Университет
+                </div>
+                <div class="card__street_metro-time">5 минут от метро</div>
+              </div>
+            </div>
+          </div>
+          <div class="card__tel card__line">
+            <span class="card__clinck">Телефон</span>
+            <a href="#" class="card__street">+7 495 324-88-45</a>
+          </div>
+          <div class="card__email card__line">
+            <span class="card__clinck">E-mail</span>
+            <div class="card__email-hover">
+              <div class="card__street card__link scheme__email">info@doctorlevin.ru
+                <div class="scheme__email-copy">
+                  <div class="scheme__email-copy-container">
+                    Скопировать координаты
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__time">
+            <div class="time__first time__work">
+              <span class="time__days">Понедельник - Пятница</span>
+              <span class="time__clock">с 10:00 до 20:00</span>
+            </div>
+            <div class="time__second time__work">
+              <span class="time__days">Суббота - Воскресенье</span>
+              <span class="time__clock">с 10:00 до 19:00</span>
+            </div>
+          </div>
+          <a href="javascript:openModule();" class="btn-record card__recording">
+            <svg width="442" height="70" viewBox="0 0 442 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="card__recording-path"
+                d="M0 54.8787C0 63.2105 6.79021 69.9458 15.1218 69.8782L418.878 66.5989C425.92 66.5417 431.975 61.593 433.432 54.7029L441.141 18.2507C443.123 8.87659 435.928 0.0723267 426.347 0.14769L14.882 3.38393C6.64404 3.44872 0 10.1452 0 18.3835V54.8787Z"
+                fill="#FF276C" />
+              <text class="card__recording-text" fill="#fff" text-anchor="middle" x="225" y="41">Записаться на
+                приём</text>
+            </svg>
+            <span class="card__recording-span">Записаться на приём</span>
+          </a>
+          <a href="javascript:openModule();" class="btn-record card__call">
+            <svg width="440" height="70" viewBox="0 0 440 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="card__call-path"
+                d="M7.63026 12.1231C9.00678 5.08169 15.1769 0.000976562 22.3516 0.000976562H418.991C426.455 0.000976562 432.784 5.48992 433.84 12.8797L439.535 52.743C440.832 61.8266 433.743 69.936 424.567 69.8639L15.0704 66.6431C5.67961 66.5692 -1.33471 57.9824 0.467044 48.7657L7.63026 12.1231Z"
+                fill="#3865B2" />
+              <text class="card__call-text" fill="#fff" text-anchor="middle" x="224" y="41">Обратный звонок</text>
+            </svg>
+            <span class="card__call-span">Обратный звонок</span>
+          </a>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+      <div class="contacts__bottom">
+        <div class="bottom__content content">
+          <div class="bottom_address address">
+            <img src="./img/metro.png" class="address__metro metro" />
+            <div class="addres_desc">
+              <div class="address__name">Университет</div>
+              <div class="address__text">Проспект Вернадского, 8а</div>
+            </div>
+          </div>
+          <img src="./img/logo-footer.png" alt="logo" class="bottom__logo logo logo_footer" />
+          <div class="bottom__social">
+            <ul class="bottom__social--list">
+              <li class="bottom__item">
+                <a href="" class="bottom__social--img bottom__social--img_vk">
+                  <svg width="56" height="52" viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bottom__social--path bottom__social--path_vk"
+                      d="M55.5 28.5C55.5 42.8594 42.3594 52 28 52C13.6406 52 0.5 39.8594 0.5 25.5C0.5 11.1406 13.6406 0 28 0C42.3594 0 55.5 14.1406 55.5 28.5Z"
+                      fill="white" fill-opacity="0.05" />
+                    <path
+                      d="M41.6795 33.0987C41.6447 33.0244 41.6122 32.9627 41.582 32.9133C41.0829 32.0229 40.1292 30.93 38.7214 29.6343L38.6916 29.6046L38.6767 29.5901L38.6617 29.5752H38.6466C38.0076 28.9718 37.603 28.5662 37.4336 28.3585C37.1236 27.9628 37.0541 27.5624 37.2235 27.1566C37.3433 26.85 37.7929 26.2025 38.5715 25.2133C38.9811 24.6891 39.3054 24.2689 39.5449 23.9523C41.2724 21.6774 42.0214 20.2237 41.7916 19.5906L41.7024 19.4427C41.6424 19.3536 41.4877 19.2722 41.2383 19.1979C40.9884 19.1237 40.669 19.1114 40.2795 19.1609L35.9662 19.1904C35.8963 19.1658 35.7965 19.1681 35.6665 19.1979C35.5367 19.2276 35.4718 19.2425 35.4718 19.2425L35.3967 19.2796L35.3371 19.3243C35.2871 19.3538 35.2322 19.4057 35.1723 19.4799C35.1126 19.5539 35.0627 19.6406 35.0229 19.7395C34.5533 20.9363 34.0193 22.0489 33.4201 23.0775C33.0506 23.6908 32.7113 24.2223 32.4015 24.6724C32.092 25.1223 31.8324 25.4538 31.6229 25.6662C31.4131 25.8789 31.2237 26.0493 31.0536 26.178C30.8838 26.3068 30.7542 26.3612 30.6644 26.3413C30.5745 26.3214 30.4897 26.3016 30.4095 26.2819C30.2698 26.1928 30.1575 26.0717 30.0727 25.9184C29.9877 25.7651 29.9304 25.5722 29.9004 25.3397C29.8706 25.1072 29.853 24.9071 29.848 24.7389C29.8433 24.5709 29.8454 24.3333 29.8556 24.0267C29.866 23.72 29.8706 23.5124 29.8706 23.4036C29.8706 23.0277 29.878 22.6198 29.8929 22.1796C29.908 21.7395 29.9202 21.3908 29.9304 21.1339C29.9406 20.8767 29.9453 20.6046 29.9453 20.3178C29.9453 20.031 29.9277 19.806 29.8929 19.6428C29.8585 19.4797 29.8056 19.3214 29.736 19.168C29.666 19.0147 29.5635 18.8961 29.429 18.8119C29.2942 18.7278 29.1267 18.6611 28.9273 18.6116C28.398 18.4929 27.7241 18.4288 26.9052 18.4188C25.0481 18.399 23.8548 18.5178 23.3256 18.775C23.1159 18.8836 22.9262 19.0321 22.7566 19.2199C22.5768 19.4376 22.5517 19.5563 22.6815 19.5759C23.2807 19.6648 23.7048 19.8775 23.9545 20.2137L24.0445 20.3919C24.1144 20.5205 24.1843 20.7481 24.2542 21.0744C24.3241 21.4007 24.3691 21.7617 24.389 22.1571C24.4388 22.8793 24.4388 23.4974 24.389 24.0116C24.339 24.5261 24.2917 24.9265 24.2467 25.2134C24.2016 25.5002 24.1343 25.7326 24.0445 25.9106C23.9545 26.0886 23.8946 26.1974 23.8646 26.2369C23.8347 26.2764 23.8097 26.3013 23.7899 26.3111C23.6601 26.3604 23.5251 26.3854 23.3854 26.3854C23.2455 26.3854 23.0759 26.3161 22.8762 26.1776C22.6766 26.0391 22.4694 25.8488 22.2547 25.6064C22.04 25.364 21.7979 25.0253 21.5282 24.5901C21.2587 24.155 20.9791 23.6407 20.6895 23.0473L20.45 22.617C20.3002 22.3401 20.0956 21.937 19.836 21.4079C19.5762 20.8787 19.3466 20.3668 19.147 19.8722C19.0672 19.6645 18.9474 19.5064 18.7876 19.3976L18.7127 19.353C18.6628 19.3135 18.5828 19.2715 18.4731 19.2268C18.3632 19.1822 18.2485 19.1502 18.1286 19.1305L14.0248 19.16C13.6055 19.16 13.3209 19.2541 13.1711 19.4421L13.1112 19.531C13.0812 19.5805 13.0661 19.6596 13.0661 19.7685C13.0661 19.8773 13.0961 20.0108 13.156 20.1689C13.7551 21.5636 14.4066 22.9087 15.1105 24.2043C15.8143 25.5 16.426 26.5436 16.9451 27.3344C17.4643 28.1257 17.9935 28.8726 18.5327 29.5746C19.0719 30.2769 19.4288 30.7269 19.6034 30.9247C19.7783 31.1227 19.9156 31.2708 20.0155 31.3697L20.39 31.7257C20.6296 31.9631 20.9815 32.2475 21.4458 32.5787C21.9102 32.9102 22.4243 33.2365 22.9885 33.5582C23.5527 33.8794 24.2091 34.1415 24.9581 34.3442C25.7069 34.5471 26.4358 34.6286 27.1447 34.5893H28.8672C29.2165 34.5594 29.4811 34.4506 29.661 34.2628L29.7206 34.1884C29.7607 34.1294 29.7982 34.0377 29.8328 33.9143C29.8678 33.7907 29.8853 33.6545 29.8853 33.5063C29.875 33.0811 29.9077 32.6979 29.9824 32.3567C30.0571 32.0156 30.1422 31.7585 30.2373 31.5853C30.3324 31.4122 30.4397 31.2662 30.5592 31.1478C30.6789 31.0292 30.7642 30.9573 30.8142 30.9326C30.864 30.9077 30.9037 30.8908 30.9336 30.8807C31.1733 30.8016 31.4553 30.8782 31.7801 31.1108C32.1047 31.3433 32.4091 31.6303 32.6938 31.9713C32.9784 32.3127 33.3203 32.6958 33.7196 33.121C34.1192 33.5463 34.4686 33.8625 34.768 34.0705L35.0675 34.2486C35.2674 34.3673 35.527 34.4762 35.8466 34.575C36.1656 34.6739 36.4451 34.6986 36.6851 34.6492L40.5191 34.59C40.8983 34.59 41.1934 34.5278 41.4027 34.4043C41.6125 34.2807 41.737 34.1445 41.7772 33.9964C41.8173 33.8481 41.8195 33.6798 41.7848 33.4917C41.7493 33.3041 41.7143 33.1729 41.6795 33.0987Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="bottom__item">
+                <a href="" class="bottom__social--img bottom__social--img_tg">
+                  <svg width="56" height="52" viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bottom__social--path bottom__social--path_tg"
+                      d="M55.5 28.5C55.5 42.8594 42.3594 52 28 52C13.6406 52 0.5 37.8594 0.5 23.5C0.5 9.1406 13.6406 0 28 0C42.3594 0 55.5 14.1406 55.5 28.5Z"
+                      fill="white" fill-opacity="0.05" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.6877 24.5113C21.9564 21.4633 26.7952 19.4379 29.225 18.4553C36.1406 15.668 37.5943 15.1867 38.5289 15.1667C38.7365 15.1667 39.1934 15.2068 39.5049 15.4474C39.7541 15.6479 39.8164 15.9086 39.858 16.1092C39.8995 16.3097 39.941 16.7308 39.8995 17.0516C39.5257 20.8617 37.9058 30.1061 37.0751 34.3573C36.7221 36.1621 36.0367 36.7636 35.3722 36.8238C33.9185 36.9441 32.8178 35.9014 31.4264 35.019C29.225 33.6354 27.9997 32.7731 25.8607 31.4095C23.3893 29.8454 24.9884 28.9831 26.4006 27.5794C26.7744 27.2185 33.1501 21.6037 33.2747 21.1023C33.2954 21.0422 33.2954 20.8015 33.1501 20.6812C33.0047 20.5609 32.797 20.601 32.6309 20.6411C32.4024 20.6812 28.9135 22.9271 22.1225 27.3588C21.1257 28.0206 20.2327 28.3414 19.4227 28.3214C18.5297 28.3013 16.8268 27.8401 15.5392 27.439C13.9816 26.9578 12.7356 26.6971 12.8394 25.8549C12.9017 25.4137 13.5248 24.9725 14.6877 24.5113Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="bottom__item">
+                <a href="" class="bottom__social--img bottom__social--img_yt">
+                  <svg width="57" height="52" viewBox="0 0 57 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bottom__social--path bottom__social--path_yt"
+                      d="M57 27.5C57 41.8594 43.3594 52 29 52C14.6406 52 0.5 38.3594 0.5 24C0.5 9.6406 14.6406 0 29 0C43.3594 0 57 13.1406 57 27.5Z"
+                      fill="white" fill-opacity="0.05" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M40.9875 16.8876C42.2389 17.2261 43.2258 18.2167 43.5626 19.4734C44.1886 21.7689 44.1645 26.5537 44.1645 26.5537C44.1645 26.5537 44.1645 31.3141 43.5628 33.6098C43.2258 34.8663 42.2391 35.8571 40.9875 36.1953C38.701 36.7996 29.5554 36.7996 29.5554 36.7996C29.5554 36.7996 20.4336 36.7996 18.1233 36.1714C16.8716 35.8329 15.885 34.8421 15.5479 33.5856C14.9463 31.3141 14.9463 26.5295 14.9463 26.5295C14.9463 26.5295 14.9463 21.7689 15.5479 19.4734C15.8848 18.2169 16.8957 17.2019 18.1231 16.8637C20.4095 16.2594 29.5552 16.2594 29.5552 16.2594C29.5552 16.2594 38.701 16.2594 40.9875 16.8876ZM34.4167 26.5417L25.75 31.4167V21.6667L34.4167 26.5417Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="bottom__item">
+                <a href="" class="bottom__social--img bottom__social--img_wa">
+                  <svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bottom__social--path bottom__social--path_wa"
+                      d="M54 26C54 40.3594 41.3594 52 27 52C12.6406 52 0 42.8594 0 28.5C0 14.1406 12.6406 1.5 27 1.5C41.5 1.19209e-07 54 11.6406 54 26Z"
+                      fill="white" fill-opacity="0.05" />
+                    <path
+                      d="M14.113 25.3656C14.1121 27.7358 14.7315 30.0499 15.9087 32.0894L14 39.0582L21.132 37.1881C23.0972 38.2598 25.3095 38.8245 27.5611 38.8255H27.5668C34.9811 38.8255 41.0174 32.7912 41.0204 25.3761C41.0217 21.7822 39.6233 18.403 37.0835 15.861C34.5433 13.3189 31.1656 11.9182 27.5668 11.9167C20.1508 11.9167 14.1159 17.9496 14.1128 25.3653L14.113 25.3656ZM18.36 31.738L18.0937 31.3152C16.9743 29.5352 16.3833 27.4782 16.3842 25.3663C16.3867 19.2028 21.4027 14.1882 27.5707 14.1882C30.5577 14.1894 33.3649 15.3539 35.4764 17.4666C37.5878 19.5794 38.7496 22.3882 38.7487 25.375C38.746 31.5388 33.7299 36.5538 27.5665 36.5538H27.5621C25.5553 36.5526 23.5872 36.0139 21.8707 34.9955L21.4622 34.7532L17.2297 35.8629L18.36 31.738ZM27.5668 38.8255H27.5669H27.5668C27.5667 38.8255 27.5665 38.8255 27.5668 38.8255Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M24.2045 19.7425C23.9527 19.1827 23.6877 19.1715 23.4482 19.1616C23.2521 19.1533 23.0278 19.1538 22.8039 19.1538C22.5797 19.1538 22.2154 19.238 21.9076 19.5743C21.5993 19.9108 20.7308 20.724 20.7308 22.3778C20.7308 24.0318 21.9356 25.6301 22.1034 25.8545C22.2716 26.0786 24.429 29.5812 27.8456 30.9285C30.6854 32.0483 31.2632 31.8257 31.8795 31.7695C32.4959 31.7135 33.8685 30.9566 34.1485 30.1716C34.4287 29.3867 34.4287 28.7139 34.3447 28.5734C34.2607 28.4333 34.0364 28.3491 33.7003 28.1812C33.364 28.0131 31.7114 27.1997 31.4033 27.0876C31.0951 26.9755 30.8709 26.9196 30.6468 27.256C30.4227 27.5922 29.7788 28.3492 29.5826 28.5734C29.3867 28.7981 29.1905 28.8261 28.8543 28.658C28.5181 28.4893 27.4354 28.1346 26.151 26.9895C25.1516 26.0986 24.477 24.9983 24.2808 24.6617C24.0847 24.3255 24.2599 24.1434 24.4284 23.9758C24.5795 23.8252 24.7647 23.5833 24.9329 23.3871C25.1006 23.1908 25.1565 23.0508 25.2686 22.8265C25.3807 22.6022 25.3246 22.4059 25.2406 22.2376C25.1565 22.0695 24.5032 20.4071 24.2043 19.7425"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom__metro_mobile">
+            <img src="./img/metro-bottom.svg" alt="">
+            <div class="bottom__metro-text_mobile">
+              <span class="bottom__metro-text_mobile-span">Адрес клиники</span> <br>
+              Университет
+            </div>
+          </div>
+          <div class="bottom__tel tel">
+            <a href="tel:+74957755821" class="tel_numbers">+7 495 775-58-21</a>
+            <div class="tel_text">заказать обратный звонок</div>
+          </div>
+          <a href="javascript:openModule();" class="btn-record bottom__recording">
+            <svg width="258" height="61" viewBox="0 0 258 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="bottom__recording-path"
+                d="M0 15.8497C0 7.49556 6.82516 0.751244 15.1787 0.850776L238.947 3.51698C246.336 3.60502 252.561 9.0616 253.615 16.3757L257.5 43.3286C258.814 52.4402 251.686 60.574 242.481 60.4678L14.8269 57.841C6.61072 57.7462 0 51.0588 0 42.842V15.8497Z"
+                fill="rgba(255, 255, 255, 0.15)" fill-opacity="1" />
+              <text class="bottom__recording-text" fill="#fff" text-anchor="middle" x="128" y="36">Записаться на
+                приём</text>
+            </svg>
+            <span class="bottom__recording-span">Записаться на приём</span>
+          </a>
+          <!-- мобильная навигация (начало) -->
+          <div class="nav__content content bottom__nav--content bottom__nav_mobile">
+            <ul class="nav__list nav__list_contacts">
+              <li class="nav__item">
+                <a href="#we" class="nav__link">Почему мы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">забота о здоровье</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">врачи</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">стоимость</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- мобильная навигация (конец) -->
+          <div class="bottom__social-mobile">
+            <ul class="bottom__social--list">
+              <li class="bottom__item">
+                <a href=""><img src="./img/vk-footer.png" alt="" class="bottom__social--img" /></a>
+              </li>
+              <li class="bottom__item">
+                <a href=""><img src="./img/tg-footer.png" alt="" class="bottom__social--img" /></a>
+              </li>
+              <li class="bottom__item">
+                <a href=""><img src="./img/you-footer.png" alt="" class="bottom__social--img" /></a>
+              </li>
+              <li class="bottom__item">
+                <a href=""><img src="./img/wa-footer.png" alt="" class="bottom__social--img" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom__nav nav">
+          <div class="nav__content content bottom__nav--content">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#we" class="nav__link">Почему мы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">забота о здоровье</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">врачи</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">стоимость</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="bottom__info content">
+          OOO Центр Приватной Стоматологии «Доктор Левин» ЦПС «Доктор Левин»
+          LLC.Лицензия ЛО-77-01-004442; ИНН: 1117746533145; ОГРН: 7704785911
+          Без согласования с автором перепечатка и использование для контента
+          веб-сайтов запрещены. 4 часть ГК РФ. Статья 1274. Цитирование в
+          разумных пределах допускается с обязательным указанием имени автора
+          и источника заимствования с обязательной Активной ссылкой.
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c9ed032f-0f47-41ae-8390-9122eafcd244&lang=ru_RU"
+    type="text/javascript"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- Видео в окне -->
+  <script src="./js/videotube.js"></script>
+  <!-- Бургер -->
+  <!--<script src="./js/burger.js"></script>-->
+  <!-- Карта -->
+  <script src="./js/map.js"></script>
+  <!-- Навигация -->
+  <script src="./js/header-nav.js"></script>
+  <!-- Слайдер с видео -->
+  <script src="./js/slider-review.js"></script>
+  <!-- Слайдер с врачами -->
+  <script src="./js/slider-doctor.js"></script>
+  <!-- Слайдер галерея -->
+  <script src="./js/slider-gallery.js"></script>
+  <!-- Аккордеон -->
+  <script src="./js/accordion.js"></script>
+  <!-- Слайдер до после -->
+  <script src="./js/slider-before-after.js"></script>
+  <!-- Слайдер брекеты -->
+  <script src="./js/slider-braces.js"></script>
+  <!-- header меню -->
+  <script src="./js/header-menu.js"></script>
+  <!-- sorting-dropdown -->
+  <script src="./js/sorting-dropdown.js"></script>
+  <!-- sorting-points -->
+  <script src="./js/sorting-points.js"></script>
+  <!-- doctors-filter -->
+  <script src="./js/doctors-filter.js"></script>
+</body>
+
+</html>
